@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6ba3f9ee201edd072efd561c9781004c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+<div style="position:fixed;top:12px;left:50%;transform:translateX(-50%);
+z-index:1000;background:rgba(15,15,25,0.90);color:white;
+padding:9px 22px;border-radius:8px;font-family:Arial;
+font-size:14px;font-weight:bold;letter-spacing:0.3px;
+border:1px solid rgba(255,255,255,0.2);">
+Karnataka — District Crime Vulnerability Index (DCVI) 2024
+</div>
+    
+<div style="position:fixed;bottom:30px;right:14px;z-index:1000;
+background:rgba(15,15,25,0.90);color:white;padding:14px 18px;
+border-radius:8px;font-family:Arial;font-size:13px;
+border:1px solid rgba(255,255,255,0.2);min-width:175px;">
+<b style='font-size:14px'>Risk Level (DCVI)</b><br><br>
+<span style='color:#dc3545;font-size:18px'>●</span>
+  <b>HIGH</b> &nbsp;(&gt; 74)<br>
+<span style='color:#fd7e14;font-size:18px'>●</span>
+  <b>MEDIUM</b> (69 – 74)<br>
+<span style='color:#198754;font-size:18px'>●</span>
+  <b>LOW</b> &nbsp;(&lt; 69)<br><br>
+<small style='color:#aaa'>Circle size = DCVI score<br>
+Click any circle for details</small>
+</div>
+    
+            <div class="folium-map" id="map_6ba3f9ee201edd072efd561c9781004c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6ba3f9ee201edd072efd561c9781004c = L.map(
+                "map_6ba3f9ee201edd072efd561c9781004c",
+                {
+                    center: [15.0, 76.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ae1cb356e9594d0caa9d91922171e128 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_ae1cb356e9594d0caa9d91922171e128.addTo(map_6ba3f9ee201edd072efd561c9781004c);
+        
+    
+            var feature_group_bbe898a387855c7b494e4e02e9901a3f = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_3bfa169657af526bfe1bd393f1b57e76 = L.circleMarker(
+                [12.97, 77.59],
+                {"bubblingMouseEvents": true, "color": "#dc3545", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dc3545", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.7, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bbe898a387855c7b494e4e02e9901a3f);
+        
+    
+        var popup_e023c6650eb8f1b34a399e7c46592e7f = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_e18496383fbddfc1cf24fd9bcc42adb7 = $(`<div id="html_e18496383fbddfc1cf24fd9bcc42adb7" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial,sans-serif;font-size:13px;min-width:190px;padding:4px'>         <b style='font-size:15px'>Bengaluru City</b>         <hr style='margin:5px 0;border-color:#ddd'>         <table style='width:100%'>         <tr><td><b>DCVI Score</b></td><td style='text-align:right'>85.6</td></tr>         <tr><td><b>Risk Level</b></td>             <td style='text-align:right;color:#dc3545;font-weight:bold'>HIGH</td></tr>         <tr><td><b>Predicted 2024</b></td><td style='text-align:right'>4,525</td></tr>         <tr><td><b>Actual 2023</b></td><td style='text-align:right'>7,848</td></tr>         </table>     </div></div>`)[0];
+                popup_e023c6650eb8f1b34a399e7c46592e7f.setContent(html_e18496383fbddfc1cf24fd9bcc42adb7);
+            
+        
+
+        circle_marker_3bfa169657af526bfe1bd393f1b57e76.bindPopup(popup_e023c6650eb8f1b34a399e7c46592e7f)
+        ;
+
+        
+    
+    
+            circle_marker_3bfa169657af526bfe1bd393f1b57e76.bindTooltip(
+                `<div>
+                     Bengaluru City  |  DCVI: 85.6  |  HIGH
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fe762ccce85c6bf055963bffe15d0d70 = L.circleMarker(
+                [13.93, 75.57],
+                {"bubblingMouseEvents": true, "color": "#dc3545", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dc3545", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.5375, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bbe898a387855c7b494e4e02e9901a3f);
+        
+    
+        var popup_43fa6b2b67a0c20df0dabb36892b9462 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_dae0440e71748648d3a43dd0be540fc1 = $(`<div id="html_dae0440e71748648d3a43dd0be540fc1" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial,sans-serif;font-size:13px;min-width:190px;padding:4px'>         <b style='font-size:15px'>Shimoga</b>         <hr style='margin:5px 0;border-color:#ddd'>         <table style='width:100%'>         <tr><td><b>DCVI Score</b></td><td style='text-align:right'>84.3</td></tr>         <tr><td><b>Risk Level</b></td>             <td style='text-align:right;color:#dc3545;font-weight:bold'>HIGH</td></tr>         <tr><td><b>Predicted 2024</b></td><td style='text-align:right'>1,850</td></tr>         <tr><td><b>Actual 2023</b></td><td style='text-align:right'>1,632</td></tr>         </table>     </div></div>`)[0];
+                popup_43fa6b2b67a0c20df0dabb36892b9462.setContent(html_dae0440e71748648d3a43dd0be540fc1);
+            
+        
+
+        circle_marker_fe762ccce85c6bf055963bffe15d0d70.bindPopup(popup_43fa6b2b67a0c20df0dabb36892b9462)
+        ;
+
+        
+    
+    
+            circle_marker_fe762ccce85c6bf055963bffe15d0d70.bindTooltip(
+                `<div>
+                     Shimoga  |  DCVI: 84.3  |  HIGH
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_47f73d577840bb158d4c3c0a13d6583b = L.circleMarker(
+                [15.7, 74.9],
+                {"bubblingMouseEvents": true, "color": "#dc3545", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dc3545", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.325, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bbe898a387855c7b494e4e02e9901a3f);
+        
+    
+        var popup_20a2eadd811ac5d679d72bc299fee944 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_d4e6a7fb9efe8c9f32c025117db2b025 = $(`<div id="html_d4e6a7fb9efe8c9f32c025117db2b025" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial,sans-serif;font-size:13px;min-width:190px;padding:4px'>         <b style='font-size:15px'>Belagavi District</b>         <hr style='margin:5px 0;border-color:#ddd'>         <table style='width:100%'>         <tr><td><b>DCVI Score</b></td><td style='text-align:right'>82.6</td></tr>         <tr><td><b>Risk Level</b></td>             <td style='text-align:right;color:#dc3545;font-weight:bold'>HIGH</td></tr>         <tr><td><b>Predicted 2024</b></td><td style='text-align:right'>1,637</td></tr>         <tr><td><b>Actual 2023</b></td><td style='text-align:right'>1,342</td></tr>         </table>     </div></div>`)[0];
+                popup_20a2eadd811ac5d679d72bc299fee944.setContent(html_d4e6a7fb9efe8c9f32c025117db2b025);
+            
+        
+
+        circle_marker_47f73d577840bb158d4c3c0a13d6583b.bindPopup(popup_20a2eadd811ac5d679d72bc299fee944)
+        ;
+
+        
+    
+    
+            circle_marker_47f73d577840bb158d4c3c0a13d6583b.bindTooltip(
+                `<div>
+                     Belagavi District  |  DCVI: 82.6  |  HIGH
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_75dbda000e467e0d2e0d1d5fa1242c40 = L.circleMarker(
+                [16.2, 77.35],
+                {"bubblingMouseEvents": true, "color": "#dc3545", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dc3545", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.0875, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bbe898a387855c7b494e4e02e9901a3f);
+        
+    
+        var popup_ffda4efa6f5fbf2c53da30d0aa36fbf5 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_b8930374aa2f513ec32a2e7f0b89ec7d = $(`<div id="html_b8930374aa2f513ec32a2e7f0b89ec7d" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial,sans-serif;font-size:13px;min-width:190px;padding:4px'>         <b style='font-size:15px'>Raichur</b>         <hr style='margin:5px 0;border-color:#ddd'>         <table style='width:100%'>         <tr><td><b>DCVI Score</b></td><td style='text-align:right'>80.7</td></tr>         <tr><td><b>Risk Level</b></td>             <td style='text-align:right;color:#dc3545;font-weight:bold'>HIGH</td></tr>         <tr><td><b>Predicted 2024</b></td><td style='text-align:right'>1,247</td></tr>         <tr><td><b>Actual 2023</b></td><td style='text-align:right'>1,030</td></tr>         </table>     </div></div>`)[0];
+                popup_ffda4efa6f5fbf2c53da30d0aa36fbf5.setContent(html_b8930374aa2f513ec32a2e7f0b89ec7d);
+            
+        
+
+        circle_marker_75dbda000e467e0d2e0d1d5fa1242c40.bindPopup(popup_ffda4efa6f5fbf2c53da30d0aa36fbf5)
+        ;
+
+        
+    
+    
+            circle_marker_75dbda000e467e0d2e0d1d5fa1242c40.bindTooltip(
+                `<div>
+                     Raichur  |  DCVI: 80.7  |  HIGH
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d1d4f7a400cb15c8ad2e4073f069c00d = L.circleMarker(
+                [12.84, 74.86],
+                {"bubblingMouseEvents": true, "color": "#dc3545", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dc3545", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.025, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bbe898a387855c7b494e4e02e9901a3f);
+        
+    
+        var popup_ab73985d76617be508f96cf0f4082ff8 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_5c13a1d336f555eccb4d91ad00748cb7 = $(`<div id="html_5c13a1d336f555eccb4d91ad00748cb7" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial,sans-serif;font-size:13px;min-width:190px;padding:4px'>         <b style='font-size:15px'>Dakshina Kannada</b>         <hr style='margin:5px 0;border-color:#ddd'>         <table style='width:100%'>         <tr><td><b>DCVI Score</b></td><td style='text-align:right'>80.2</td></tr>         <tr><td><b>Risk Level</b></td>             <td style='text-align:right;color:#dc3545;font-weight:bold'>HIGH</td></tr>         <tr><td><b>Predicted 2024</b></td><td style='text-align:right'>432</td></tr>         <tr><td><b>Actual 2023</b></td><td style='text-align:right'>378</td></tr>         </table>     </div></div>`)[0];
+                popup_ab73985d76617be508f96cf0f4082ff8.setContent(html_5c13a1d336f555eccb4d91ad00748cb7);
+            
+        
+
+        circle_marker_d1d4f7a400cb15c8ad2e4073f069c00d.bindPopup(popup_ab73985d76617be508f96cf0f4082ff8)
+        ;
+
+        
+    
+    
+            circle_marker_d1d4f7a400cb15c8ad2e4073f069c00d.bindTooltip(
+                `<div>
+                     Dakshina Kannada  |  DCVI: 80.2  |  HIGH
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4f40914abefc55e36467bb95a6091fc3 = L.circleMarker(
+                [15.46, 75.01],
+                {"bubblingMouseEvents": true, "color": "#dc3545", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dc3545", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.975, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bbe898a387855c7b494e4e02e9901a3f);
+        
+    
+        var popup_5f4d93e3bb18823cfcb6378858fbaa39 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_fa1d5bbe8031866be64029951f01c437 = $(`<div id="html_fa1d5bbe8031866be64029951f01c437" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial,sans-serif;font-size:13px;min-width:190px;padding:4px'>         <b style='font-size:15px'>Dharwad</b>         <hr style='margin:5px 0;border-color:#ddd'>         <table style='width:100%'>         <tr><td><b>DCVI Score</b></td><td style='text-align:right'>79.8</td></tr>         <tr><td><b>Risk Level</b></td>             <td style='text-align:right;color:#dc3545;font-weight:bold'>HIGH</td></tr>         <tr><td><b>Predicted 2024</b></td><td style='text-align:right'>267</td></tr>         <tr><td><b>Actual 2023</b></td><td style='text-align:right'>266</td></tr>         </table>     </div></div>`)[0];
+                popup_5f4d93e3bb18823cfcb6378858fbaa39.setContent(html_fa1d5bbe8031866be64029951f01c437);
+            
+        
+
+        circle_marker_4f40914abefc55e36467bb95a6091fc3.bindPopup(popup_5f4d93e3bb18823cfcb6378858fbaa39)
+        ;
+
+        
+    
+    
+            circle_marker_4f40914abefc55e36467bb95a6091fc3.bindTooltip(
+                `<div>
+                     Dharwad  |  DCVI: 79.8  |  HIGH
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dc19ee845eb124df0b71f5c1b2a0c873 = L.circleMarker(
+                [14.46, 75.92],
+                {"bubblingMouseEvents": true, "color": "#dc3545", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dc3545", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.8375, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bbe898a387855c7b494e4e02e9901a3f);
+        
+    
+        var popup_99cecaf4964630b57298b56f0c5f644e = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_1fcd607036e13511809d6920725e658c = $(`<div id="html_1fcd607036e13511809d6920725e658c" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial,sans-serif;font-size:13px;min-width:190px;padding:4px'>         <b style='font-size:15px'>Davanagere</b>         <hr style='margin:5px 0;border-color:#ddd'>         <table style='width:100%'>         <tr><td><b>DCVI Score</b></td><td style='text-align:right'>78.7</td></tr>         <tr><td><b>Risk Level</b></td>             <td style='text-align:right;color:#dc3545;font-weight:bold'>HIGH</td></tr>         <tr><td><b>Predicted 2024</b></td><td style='text-align:right'>1,268</td></tr>         <tr><td><b>Actual 2023</b></td><td style='text-align:right'>1,148</td></tr>         </table>     </div></div>`)[0];
+                popup_99cecaf4964630b57298b56f0c5f644e.setContent(html_1fcd607036e13511809d6920725e658c);
+            
+        
+
+        circle_marker_dc19ee845eb124df0b71f5c1b2a0c873.bindPopup(popup_99cecaf4964630b57298b56f0c5f644e)
+        ;
+
+        
+    
+    
+            circle_marker_dc19ee845eb124df0b71f5c1b2a0c873.bindTooltip(
+                `<div>
+                     Davanagere  |  DCVI: 78.7  |  HIGH
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4006fb2a040f569b27aaaf8540748a92 = L.circleMarker(
+                [12.72, 77.28],
+                {"bubblingMouseEvents": true, "color": "#dc3545", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dc3545", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.8375, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bbe898a387855c7b494e4e02e9901a3f);
+        
+    
+        var popup_6f7ad8a6dacab58bc838dd487bc61c68 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_4738b4f600a819efb49be39d1e92acb6 = $(`<div id="html_4738b4f600a819efb49be39d1e92acb6" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial,sans-serif;font-size:13px;min-width:190px;padding:4px'>         <b style='font-size:15px'>Ramanagara</b>         <hr style='margin:5px 0;border-color:#ddd'>         <table style='width:100%'>         <tr><td><b>DCVI Score</b></td><td style='text-align:right'>78.7</td></tr>         <tr><td><b>Risk Level</b></td>             <td style='text-align:right;color:#dc3545;font-weight:bold'>HIGH</td></tr>         <tr><td><b>Predicted 2024</b></td><td style='text-align:right'>1,458</td></tr>         <tr><td><b>Actual 2023</b></td><td style='text-align:right'>1,210</td></tr>         </table>     </div></div>`)[0];
+                popup_6f7ad8a6dacab58bc838dd487bc61c68.setContent(html_4738b4f600a819efb49be39d1e92acb6);
+            
+        
+
+        circle_marker_4006fb2a040f569b27aaaf8540748a92.bindPopup(popup_6f7ad8a6dacab58bc838dd487bc61c68)
+        ;
+
+        
+    
+    
+            circle_marker_4006fb2a040f569b27aaaf8540748a92.bindTooltip(
+                `<div>
+                     Ramanagara  |  DCVI: 78.7  |  HIGH
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c241d50d7efd636e0c00049606e11a00 = L.circleMarker(
+                [15.35, 76.15],
+                {"bubblingMouseEvents": true, "color": "#dc3545", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dc3545", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.7625, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bbe898a387855c7b494e4e02e9901a3f);
+        
+    
+        var popup_0cae354ba40152cbbc29dc1bc20afea8 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_cc64b0af9cda83a3cd9f3b2a7b8f202e = $(`<div id="html_cc64b0af9cda83a3cd9f3b2a7b8f202e" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial,sans-serif;font-size:13px;min-width:190px;padding:4px'>         <b style='font-size:15px'>Koppal</b>         <hr style='margin:5px 0;border-color:#ddd'>         <table style='width:100%'>         <tr><td><b>DCVI Score</b></td><td style='text-align:right'>78.1</td></tr>         <tr><td><b>Risk Level</b></td>             <td style='text-align:right;color:#dc3545;font-weight:bold'>HIGH</td></tr>         <tr><td><b>Predicted 2024</b></td><td style='text-align:right'>603</td></tr>         <tr><td><b>Actual 2023</b></td><td style='text-align:right'>660</td></tr>         </table>     </div></div>`)[0];
+                popup_0cae354ba40152cbbc29dc1bc20afea8.setContent(html_cc64b0af9cda83a3cd9f3b2a7b8f202e);
+            
+        
+
+        circle_marker_c241d50d7efd636e0c00049606e11a00.bindPopup(popup_0cae354ba40152cbbc29dc1bc20afea8)
+        ;
+
+        
+    
+    
+            circle_marker_c241d50d7efd636e0c00049606e11a00.bindTooltip(
+                `<div>
+                     Koppal  |  DCVI: 78.1  |  HIGH
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3b7852c924fb8d889445927dec35d06f = L.circleMarker(
+                [13.32, 75.77],
+                {"bubblingMouseEvents": true, "color": "#dc3545", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dc3545", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.5875, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bbe898a387855c7b494e4e02e9901a3f);
+        
+    
+        var popup_8a6475f8ecdf993526d993cd66b9f5ef = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_5c6b4cd0bd7650d262d9bf3419cb6c4b = $(`<div id="html_5c6b4cd0bd7650d262d9bf3419cb6c4b" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial,sans-serif;font-size:13px;min-width:190px;padding:4px'>         <b style='font-size:15px'>Chikkamagaluru</b>         <hr style='margin:5px 0;border-color:#ddd'>         <table style='width:100%'>         <tr><td><b>DCVI Score</b></td><td style='text-align:right'>76.7</td></tr>         <tr><td><b>Risk Level</b></td>             <td style='text-align:right;color:#dc3545;font-weight:bold'>HIGH</td></tr>         <tr><td><b>Predicted 2024</b></td><td style='text-align:right'>813</td></tr>         <tr><td><b>Actual 2023</b></td><td style='text-align:right'>896</td></tr>         </table>     </div></div>`)[0];
+                popup_8a6475f8ecdf993526d993cd66b9f5ef.setContent(html_5c6b4cd0bd7650d262d9bf3419cb6c4b);
+            
+        
+
+        circle_marker_3b7852c924fb8d889445927dec35d06f.bindPopup(popup_8a6475f8ecdf993526d993cd66b9f5ef)
+        ;
+
+        
+    
+    
+            circle_marker_3b7852c924fb8d889445927dec35d06f.bindTooltip(
+                `<div>
+                     Chikkamagaluru  |  DCVI: 76.7  |  HIGH
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_894e0072c3515678abed4e11e09d3b3f = L.circleMarker(
+                [16.83, 75.71],
+                {"bubblingMouseEvents": true, "color": "#dc3545", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dc3545", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.2875, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bbe898a387855c7b494e4e02e9901a3f);
+        
+    
+        var popup_12afac2ac395e1c2b89405d3af58a008 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_308ae2b09e3f416055329f81ca2471d9 = $(`<div id="html_308ae2b09e3f416055329f81ca2471d9" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial,sans-serif;font-size:13px;min-width:190px;padding:4px'>         <b style='font-size:15px'>Vijayapura</b>         <hr style='margin:5px 0;border-color:#ddd'>         <table style='width:100%'>         <tr><td><b>DCVI Score</b></td><td style='text-align:right'>74.3</td></tr>         <tr><td><b>Risk Level</b></td>             <td style='text-align:right;color:#dc3545;font-weight:bold'>HIGH</td></tr>         <tr><td><b>Predicted 2024</b></td><td style='text-align:right'>882</td></tr>         <tr><td><b>Actual 2023</b></td><td style='text-align:right'>808</td></tr>         </table>     </div></div>`)[0];
+                popup_12afac2ac395e1c2b89405d3af58a008.setContent(html_308ae2b09e3f416055329f81ca2471d9);
+            
+        
+
+        circle_marker_894e0072c3515678abed4e11e09d3b3f.bindPopup(popup_12afac2ac395e1c2b89405d3af58a008)
+        ;
+
+        
+    
+    
+            circle_marker_894e0072c3515678abed4e11e09d3b3f.bindTooltip(
+                `<div>
+                     Vijayapura  |  DCVI: 74.3  |  HIGH
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fde536f6619d9bf42b2afe5b947e4a16 = L.circleMarker(
+                [14.8, 75.4],
+                {"bubblingMouseEvents": true, "color": "#dc3545", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dc3545", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.2625, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bbe898a387855c7b494e4e02e9901a3f);
+        
+    
+        var popup_39022b98833b3a97361c06e6eab90c00 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_0c9c9dae4ac0c40fe49b5f58b1c689ff = $(`<div id="html_0c9c9dae4ac0c40fe49b5f58b1c689ff" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial,sans-serif;font-size:13px;min-width:190px;padding:4px'>         <b style='font-size:15px'>Haveri</b>         <hr style='margin:5px 0;border-color:#ddd'>         <table style='width:100%'>         <tr><td><b>DCVI Score</b></td><td style='text-align:right'>74.1</td></tr>         <tr><td><b>Risk Level</b></td>             <td style='text-align:right;color:#dc3545;font-weight:bold'>HIGH</td></tr>         <tr><td><b>Predicted 2024</b></td><td style='text-align:right'>606</td></tr>         <tr><td><b>Actual 2023</b></td><td style='text-align:right'>676</td></tr>         </table>     </div></div>`)[0];
+                popup_39022b98833b3a97361c06e6eab90c00.setContent(html_0c9c9dae4ac0c40fe49b5f58b1c689ff);
+            
+        
+
+        circle_marker_fde536f6619d9bf42b2afe5b947e4a16.bindPopup(popup_39022b98833b3a97361c06e6eab90c00)
+        ;
+
+        
+    
+    
+            circle_marker_fde536f6619d9bf42b2afe5b947e4a16.bindTooltip(
+                `<div>
+                     Haveri  |  DCVI: 74.1  |  HIGH
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_35c90bf489d57b1c3c6c8807a3196f99 = L.circleMarker(
+                [12.52, 76.9],
+                {"bubblingMouseEvents": true, "color": "#fd7e14", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd7e14", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.25, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bbe898a387855c7b494e4e02e9901a3f);
+        
+    
+        var popup_184241f83fd4e4a27199d50f6fac08c8 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_b62b362d444102cd34b33bbf0337f710 = $(`<div id="html_b62b362d444102cd34b33bbf0337f710" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial,sans-serif;font-size:13px;min-width:190px;padding:4px'>         <b style='font-size:15px'>Mandya</b>         <hr style='margin:5px 0;border-color:#ddd'>         <table style='width:100%'>         <tr><td><b>DCVI Score</b></td><td style='text-align:right'>74.0</td></tr>         <tr><td><b>Risk Level</b></td>             <td style='text-align:right;color:#fd7e14;font-weight:bold'>MEDIUM</td></tr>         <tr><td><b>Predicted 2024</b></td><td style='text-align:right'>1,684</td></tr>         <tr><td><b>Actual 2023</b></td><td style='text-align:right'>1,220</td></tr>         </table>     </div></div>`)[0];
+                popup_184241f83fd4e4a27199d50f6fac08c8.setContent(html_b62b362d444102cd34b33bbf0337f710);
+            
+        
+
+        circle_marker_35c90bf489d57b1c3c6c8807a3196f99.bindPopup(popup_184241f83fd4e4a27199d50f6fac08c8)
+        ;
+
+        
+    
+    
+            circle_marker_35c90bf489d57b1c3c6c8807a3196f99.bindTooltip(
+                `<div>
+                     Mandya  |  DCVI: 74.0  |  MEDIUM
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_50cfed2114f08aaf9bc1668ab37e83df = L.circleMarker(
+                [12.2, 76.4],
+                {"bubblingMouseEvents": true, "color": "#fd7e14", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd7e14", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.2, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bbe898a387855c7b494e4e02e9901a3f);
+        
+    
+        var popup_d6f7209944f58dcb88567a2ad2d752f5 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_79e59b732670e7cf152bbeda868ecb4c = $(`<div id="html_79e59b732670e7cf152bbeda868ecb4c" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial,sans-serif;font-size:13px;min-width:190px;padding:4px'>         <b style='font-size:15px'>Mysuru District</b>         <hr style='margin:5px 0;border-color:#ddd'>         <table style='width:100%'>         <tr><td><b>DCVI Score</b></td><td style='text-align:right'>73.6</td></tr>         <tr><td><b>Risk Level</b></td>             <td style='text-align:right;color:#fd7e14;font-weight:bold'>MEDIUM</td></tr>         <tr><td><b>Predicted 2024</b></td><td style='text-align:right'>1,269</td></tr>         <tr><td><b>Actual 2023</b></td><td style='text-align:right'>1,192</td></tr>         </table>     </div></div>`)[0];
+                popup_d6f7209944f58dcb88567a2ad2d752f5.setContent(html_79e59b732670e7cf152bbeda868ecb4c);
+            
+        
+
+        circle_marker_50cfed2114f08aaf9bc1668ab37e83df.bindPopup(popup_d6f7209944f58dcb88567a2ad2d752f5)
+        ;
+
+        
+    
+    
+            circle_marker_50cfed2114f08aaf9bc1668ab37e83df.bindTooltip(
+                `<div>
+                     Mysuru District  |  DCVI: 73.6  |  MEDIUM
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0b9daed574bb2ae0d6a7c488737d6743 = L.circleMarker(
+                [17.4, 76.9],
+                {"bubblingMouseEvents": true, "color": "#fd7e14", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd7e14", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.175, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bbe898a387855c7b494e4e02e9901a3f);
+        
+    
+        var popup_c114c1d51fd3764b25f1f07f5b4942ad = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_2f03e61c7c7000d0dc9fc93d9e2a5e40 = $(`<div id="html_2f03e61c7c7000d0dc9fc93d9e2a5e40" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial,sans-serif;font-size:13px;min-width:190px;padding:4px'>         <b style='font-size:15px'>Kalaburgi City</b>         <hr style='margin:5px 0;border-color:#ddd'>         <table style='width:100%'>         <tr><td><b>DCVI Score</b></td><td style='text-align:right'>73.4</td></tr>         <tr><td><b>Risk Level</b></td>             <td style='text-align:right;color:#fd7e14;font-weight:bold'>MEDIUM</td></tr>         <tr><td><b>Predicted 2024</b></td><td style='text-align:right'>412</td></tr>         <tr><td><b>Actual 2023</b></td><td style='text-align:right'>372</td></tr>         </table>     </div></div>`)[0];
+                popup_c114c1d51fd3764b25f1f07f5b4942ad.setContent(html_2f03e61c7c7000d0dc9fc93d9e2a5e40);
+            
+        
+
+        circle_marker_0b9daed574bb2ae0d6a7c488737d6743.bindPopup(popup_c114c1d51fd3764b25f1f07f5b4942ad)
+        ;
+
+        
+    
+    
+            circle_marker_0b9daed574bb2ae0d6a7c488737d6743.bindTooltip(
+                `<div>
+                     Kalaburgi City  |  DCVI: 73.4  |  MEDIUM
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4ebd7518a6893f9d58fd46d7391eb1e4 = L.circleMarker(
+                [17.91, 77.52],
+                {"bubblingMouseEvents": true, "color": "#fd7e14", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd7e14", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.15, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bbe898a387855c7b494e4e02e9901a3f);
+        
+    
+        var popup_d8ed51543f7a85a494c6258cf9a11278 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_e4aaa1e3219f3fd49ea3cd3fe0f58c04 = $(`<div id="html_e4aaa1e3219f3fd49ea3cd3fe0f58c04" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial,sans-serif;font-size:13px;min-width:190px;padding:4px'>         <b style='font-size:15px'>Bidar</b>         <hr style='margin:5px 0;border-color:#ddd'>         <table style='width:100%'>         <tr><td><b>DCVI Score</b></td><td style='text-align:right'>73.2</td></tr>         <tr><td><b>Risk Level</b></td>             <td style='text-align:right;color:#fd7e14;font-weight:bold'>MEDIUM</td></tr>         <tr><td><b>Predicted 2024</b></td><td style='text-align:right'>595</td></tr>         <tr><td><b>Actual 2023</b></td><td style='text-align:right'>566</td></tr>         </table>     </div></div>`)[0];
+                popup_d8ed51543f7a85a494c6258cf9a11278.setContent(html_e4aaa1e3219f3fd49ea3cd3fe0f58c04);
+            
+        
+
+        circle_marker_4ebd7518a6893f9d58fd46d7391eb1e4.bindPopup(popup_d8ed51543f7a85a494c6258cf9a11278)
+        ;
+
+        
+    
+    
+            circle_marker_4ebd7518a6893f9d58fd46d7391eb1e4.bindTooltip(
+                `<div>
+                     Bidar  |  DCVI: 73.2  |  MEDIUM
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e3eebfd57e822b149fbb276b935d3836 = L.circleMarker(
+                [13.44, 77.73],
+                {"bubblingMouseEvents": true, "color": "#fd7e14", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd7e14", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.1375, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bbe898a387855c7b494e4e02e9901a3f);
+        
+    
+        var popup_37225fb5d0948b5b4c7bf6c1f81c7188 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_b2c82ca3bcd1233050a434c5bf8cf382 = $(`<div id="html_b2c82ca3bcd1233050a434c5bf8cf382" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial,sans-serif;font-size:13px;min-width:190px;padding:4px'>         <b style='font-size:15px'>Chikkaballapura</b>         <hr style='margin:5px 0;border-color:#ddd'>         <table style='width:100%'>         <tr><td><b>DCVI Score</b></td><td style='text-align:right'>73.1</td></tr>         <tr><td><b>Risk Level</b></td>             <td style='text-align:right;color:#fd7e14;font-weight:bold'>MEDIUM</td></tr>         <tr><td><b>Predicted 2024</b></td><td style='text-align:right'>640</td></tr>         <tr><td><b>Actual 2023</b></td><td style='text-align:right'>820</td></tr>         </table>     </div></div>`)[0];
+                popup_37225fb5d0948b5b4c7bf6c1f81c7188.setContent(html_b2c82ca3bcd1233050a434c5bf8cf382);
+            
+        
+
+        circle_marker_e3eebfd57e822b149fbb276b935d3836.bindPopup(popup_37225fb5d0948b5b4c7bf6c1f81c7188)
+        ;
+
+        
+    
+    
+            circle_marker_e3eebfd57e822b149fbb276b935d3836.bindTooltip(
+                `<div>
+                     Chikkaballapura  |  DCVI: 73.1  |  MEDIUM
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d723a7925bb5c0ce674e8dfc3918d761 = L.circleMarker(
+                [12.42, 75.74],
+                {"bubblingMouseEvents": true, "color": "#fd7e14", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd7e14", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.1125, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bbe898a387855c7b494e4e02e9901a3f);
+        
+    
+        var popup_90c4036c64888f30a9200751b13888f7 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_cdb2cd0a146c33a975df7fa6017a498e = $(`<div id="html_cdb2cd0a146c33a975df7fa6017a498e" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial,sans-serif;font-size:13px;min-width:190px;padding:4px'>         <b style='font-size:15px'>Kodagu</b>         <hr style='margin:5px 0;border-color:#ddd'>         <table style='width:100%'>         <tr><td><b>DCVI Score</b></td><td style='text-align:right'>72.9</td></tr>         <tr><td><b>Risk Level</b></td>             <td style='text-align:right;color:#fd7e14;font-weight:bold'>MEDIUM</td></tr>         <tr><td><b>Predicted 2024</b></td><td style='text-align:right'>424</td></tr>         <tr><td><b>Actual 2023</b></td><td style='text-align:right'>372</td></tr>         </table>     </div></div>`)[0];
+                popup_90c4036c64888f30a9200751b13888f7.setContent(html_cdb2cd0a146c33a975df7fa6017a498e);
+            
+        
+
+        circle_marker_d723a7925bb5c0ce674e8dfc3918d761.bindPopup(popup_90c4036c64888f30a9200751b13888f7)
+        ;
+
+        
+    
+    
+            circle_marker_d723a7925bb5c0ce674e8dfc3918d761.bindTooltip(
+                `<div>
+                     Kodagu  |  DCVI: 72.9  |  MEDIUM
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c4271bad10370e2e3b11648276bd8dac = L.circleMarker(
+                [15.15, 76.93],
+                {"bubblingMouseEvents": true, "color": "#fd7e14", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd7e14", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.0375, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bbe898a387855c7b494e4e02e9901a3f);
+        
+    
+        var popup_5e771690a8e07397c32a5e2deb8999d3 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_594aa29cc9901c24ccfa531b30b92ab8 = $(`<div id="html_594aa29cc9901c24ccfa531b30b92ab8" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial,sans-serif;font-size:13px;min-width:190px;padding:4px'>         <b style='font-size:15px'>Ballari</b>         <hr style='margin:5px 0;border-color:#ddd'>         <table style='width:100%'>         <tr><td><b>DCVI Score</b></td><td style='text-align:right'>72.3</td></tr>         <tr><td><b>Risk Level</b></td>             <td style='text-align:right;color:#fd7e14;font-weight:bold'>MEDIUM</td></tr>         <tr><td><b>Predicted 2024</b></td><td style='text-align:right'>495</td></tr>         <tr><td><b>Actual 2023</b></td><td style='text-align:right'>546</td></tr>         </table>     </div></div>`)[0];
+                popup_5e771690a8e07397c32a5e2deb8999d3.setContent(html_594aa29cc9901c24ccfa531b30b92ab8);
+            
+        
+
+        circle_marker_c4271bad10370e2e3b11648276bd8dac.bindPopup(popup_5e771690a8e07397c32a5e2deb8999d3)
+        ;
+
+        
+    
+    
+            circle_marker_c4271bad10370e2e3b11648276bd8dac.bindTooltip(
+                `<div>
+                     Ballari  |  DCVI: 72.3  |  MEDIUM
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9d3c0e14640059cbfd82896efc1dddd5 = L.circleMarker(
+                [15.36, 75.12],
+                {"bubblingMouseEvents": true, "color": "#fd7e14", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd7e14", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.0125, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bbe898a387855c7b494e4e02e9901a3f);
+        
+    
+        var popup_24886addf0d22b628c7a14df3e7d58b0 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_2719aada50f0a5fa6b1fc857bdc31cbd = $(`<div id="html_2719aada50f0a5fa6b1fc857bdc31cbd" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial,sans-serif;font-size:13px;min-width:190px;padding:4px'>         <b style='font-size:15px'>Hubballi Dharwad City</b>         <hr style='margin:5px 0;border-color:#ddd'>         <table style='width:100%'>         <tr><td><b>DCVI Score</b></td><td style='text-align:right'>72.1</td></tr>         <tr><td><b>Risk Level</b></td>             <td style='text-align:right;color:#fd7e14;font-weight:bold'>MEDIUM</td></tr>         <tr><td><b>Predicted 2024</b></td><td style='text-align:right'>432</td></tr>         <tr><td><b>Actual 2023</b></td><td style='text-align:right'>434</td></tr>         </table>     </div></div>`)[0];
+                popup_24886addf0d22b628c7a14df3e7d58b0.setContent(html_2719aada50f0a5fa6b1fc857bdc31cbd);
+            
+        
+
+        circle_marker_9d3c0e14640059cbfd82896efc1dddd5.bindPopup(popup_24886addf0d22b628c7a14df3e7d58b0)
+        ;
+
+        
+    
+    
+            circle_marker_9d3c0e14640059cbfd82896efc1dddd5.bindTooltip(
+                `<div>
+                     Hubballi Dharwad City  |  DCVI: 72.1  |  MEDIUM
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_91e40a7ff2f0545129bbd20abb845ea9 = L.circleMarker(
+                [17.33, 76.83],
+                {"bubblingMouseEvents": true, "color": "#fd7e14", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd7e14", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.975, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bbe898a387855c7b494e4e02e9901a3f);
+        
+    
+        var popup_005ee50a7dbb9a1b58b652b2fd4f8eb1 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_aee5370d51a552521586de4b02c299c8 = $(`<div id="html_aee5370d51a552521586de4b02c299c8" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial,sans-serif;font-size:13px;min-width:190px;padding:4px'>         <b style='font-size:15px'>Kalaburgi</b>         <hr style='margin:5px 0;border-color:#ddd'>         <table style='width:100%'>         <tr><td><b>DCVI Score</b></td><td style='text-align:right'>71.8</td></tr>         <tr><td><b>Risk Level</b></td>             <td style='text-align:right;color:#fd7e14;font-weight:bold'>MEDIUM</td></tr>         <tr><td><b>Predicted 2024</b></td><td style='text-align:right'>624</td></tr>         <tr><td><b>Actual 2023</b></td><td style='text-align:right'>668</td></tr>         </table>     </div></div>`)[0];
+                popup_005ee50a7dbb9a1b58b652b2fd4f8eb1.setContent(html_aee5370d51a552521586de4b02c299c8);
+            
+        
+
+        circle_marker_91e40a7ff2f0545129bbd20abb845ea9.bindPopup(popup_005ee50a7dbb9a1b58b652b2fd4f8eb1)
+        ;
+
+        
+    
+    
+            circle_marker_91e40a7ff2f0545129bbd20abb845ea9.bindTooltip(
+                `<div>
+                     Kalaburgi  |  DCVI: 71.8  |  MEDIUM
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6c859c3f8cd20bfae227898f1d8d54e8 = L.circleMarker(
+                [13.34, 74.75],
+                {"bubblingMouseEvents": true, "color": "#fd7e14", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd7e14", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.95, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bbe898a387855c7b494e4e02e9901a3f);
+        
+    
+        var popup_10b28a34b6e17392fbde1210d12a90d0 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_fa17e39c11cd295022c1bf1dbebce044 = $(`<div id="html_fa17e39c11cd295022c1bf1dbebce044" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial,sans-serif;font-size:13px;min-width:190px;padding:4px'>         <b style='font-size:15px'>Udupi</b>         <hr style='margin:5px 0;border-color:#ddd'>         <table style='width:100%'>         <tr><td><b>DCVI Score</b></td><td style='text-align:right'>71.6</td></tr>         <tr><td><b>Risk Level</b></td>             <td style='text-align:right;color:#fd7e14;font-weight:bold'>MEDIUM</td></tr>         <tr><td><b>Predicted 2024</b></td><td style='text-align:right'>540</td></tr>         <tr><td><b>Actual 2023</b></td><td style='text-align:right'>462</td></tr>         </table>     </div></div>`)[0];
+                popup_10b28a34b6e17392fbde1210d12a90d0.setContent(html_fa17e39c11cd295022c1bf1dbebce044);
+            
+        
+
+        circle_marker_6c859c3f8cd20bfae227898f1d8d54e8.bindPopup(popup_10b28a34b6e17392fbde1210d12a90d0)
+        ;
+
+        
+    
+    
+            circle_marker_6c859c3f8cd20bfae227898f1d8d54e8.bindTooltip(
+                `<div>
+                     Udupi  |  DCVI: 71.6  |  MEDIUM
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_38426f1390e5eee088840f03286e8725 = L.circleMarker(
+                [13.14, 78.13],
+                {"bubblingMouseEvents": true, "color": "#fd7e14", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd7e14", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.925, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bbe898a387855c7b494e4e02e9901a3f);
+        
+    
+        var popup_627f4c51060ca01b8868ecebd0429ac3 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_deb86f0a884a82d2a97678c43956c703 = $(`<div id="html_deb86f0a884a82d2a97678c43956c703" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial,sans-serif;font-size:13px;min-width:190px;padding:4px'>         <b style='font-size:15px'>Kolar</b>         <hr style='margin:5px 0;border-color:#ddd'>         <table style='width:100%'>         <tr><td><b>DCVI Score</b></td><td style='text-align:right'>71.4</td></tr>         <tr><td><b>Risk Level</b></td>             <td style='text-align:right;color:#fd7e14;font-weight:bold'>MEDIUM</td></tr>         <tr><td><b>Predicted 2024</b></td><td style='text-align:right'>603</td></tr>         <tr><td><b>Actual 2023</b></td><td style='text-align:right'>666</td></tr>         </table>     </div></div>`)[0];
+                popup_627f4c51060ca01b8868ecebd0429ac3.setContent(html_deb86f0a884a82d2a97678c43956c703);
+            
+        
+
+        circle_marker_38426f1390e5eee088840f03286e8725.bindPopup(popup_627f4c51060ca01b8868ecebd0429ac3)
+        ;
+
+        
+    
+    
+            circle_marker_38426f1390e5eee088840f03286e8725.bindTooltip(
+                `<div>
+                     Kolar  |  DCVI: 71.4  |  MEDIUM
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2a4283d8f974fb38af3807c8498174bc = L.circleMarker(
+                [13.34, 77.1],
+                {"bubblingMouseEvents": true, "color": "#fd7e14", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd7e14", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.9, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bbe898a387855c7b494e4e02e9901a3f);
+        
+    
+        var popup_416fdc1b4b53b0374c68b3b62d43bea6 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_4675d8189992900f3ba1abbdbccc76ad = $(`<div id="html_4675d8189992900f3ba1abbdbccc76ad" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial,sans-serif;font-size:13px;min-width:190px;padding:4px'>         <b style='font-size:15px'>Tumakuru</b>         <hr style='margin:5px 0;border-color:#ddd'>         <table style='width:100%'>         <tr><td><b>DCVI Score</b></td><td style='text-align:right'>71.2</td></tr>         <tr><td><b>Risk Level</b></td>             <td style='text-align:right;color:#fd7e14;font-weight:bold'>MEDIUM</td></tr>         <tr><td><b>Predicted 2024</b></td><td style='text-align:right'>1,686</td></tr>         <tr><td><b>Actual 2023</b></td><td style='text-align:right'>1,424</td></tr>         </table>     </div></div>`)[0];
+                popup_416fdc1b4b53b0374c68b3b62d43bea6.setContent(html_4675d8189992900f3ba1abbdbccc76ad);
+            
+        
+
+        circle_marker_2a4283d8f974fb38af3807c8498174bc.bindPopup(popup_416fdc1b4b53b0374c68b3b62d43bea6)
+        ;
+
+        
+    
+    
+            circle_marker_2a4283d8f974fb38af3807c8498174bc.bindTooltip(
+                `<div>
+                     Tumakuru  |  DCVI: 71.2  |  MEDIUM
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2e02d401b7cfc13a431833f3fd00a3b6 = L.circleMarker(
+                [13.0, 76.1],
+                {"bubblingMouseEvents": true, "color": "#fd7e14", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd7e14", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.8625, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bbe898a387855c7b494e4e02e9901a3f);
+        
+    
+        var popup_320155ec38acffff43b847689fa3825e = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_0616189278a3d7f3daf4c26e2f5b3152 = $(`<div id="html_0616189278a3d7f3daf4c26e2f5b3152" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial,sans-serif;font-size:13px;min-width:190px;padding:4px'>         <b style='font-size:15px'>Hassan</b>         <hr style='margin:5px 0;border-color:#ddd'>         <table style='width:100%'>         <tr><td><b>DCVI Score</b></td><td style='text-align:right'>70.9</td></tr>         <tr><td><b>Risk Level</b></td>             <td style='text-align:right;color:#fd7e14;font-weight:bold'>MEDIUM</td></tr>         <tr><td><b>Predicted 2024</b></td><td style='text-align:right'>1,697</td></tr>         <tr><td><b>Actual 2023</b></td><td style='text-align:right'>1,300</td></tr>         </table>     </div></div>`)[0];
+                popup_320155ec38acffff43b847689fa3825e.setContent(html_0616189278a3d7f3daf4c26e2f5b3152);
+            
+        
+
+        circle_marker_2e02d401b7cfc13a431833f3fd00a3b6.bindPopup(popup_320155ec38acffff43b847689fa3825e)
+        ;
+
+        
+    
+    
+            circle_marker_2e02d401b7cfc13a431833f3fd00a3b6.bindTooltip(
+                `<div>
+                     Hassan  |  DCVI: 70.9  |  MEDIUM
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6bda01339c395f6e0b31acdc52de775d = L.circleMarker(
+                [14.79, 74.13],
+                {"bubblingMouseEvents": true, "color": "#fd7e14", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd7e14", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.65, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bbe898a387855c7b494e4e02e9901a3f);
+        
+    
+        var popup_d0c93cec8495658eca0462e2d571bc14 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_dfcc471164db04f3b37c253bfcfafabb = $(`<div id="html_dfcc471164db04f3b37c253bfcfafabb" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial,sans-serif;font-size:13px;min-width:190px;padding:4px'>         <b style='font-size:15px'>Uttara Kannada</b>         <hr style='margin:5px 0;border-color:#ddd'>         <table style='width:100%'>         <tr><td><b>DCVI Score</b></td><td style='text-align:right'>69.2</td></tr>         <tr><td><b>Risk Level</b></td>             <td style='text-align:right;color:#fd7e14;font-weight:bold'>MEDIUM</td></tr>         <tr><td><b>Predicted 2024</b></td><td style='text-align:right'>624</td></tr>         <tr><td><b>Actual 2023</b></td><td style='text-align:right'>668</td></tr>         </table>     </div></div>`)[0];
+                popup_d0c93cec8495658eca0462e2d571bc14.setContent(html_dfcc471164db04f3b37c253bfcfafabb);
+            
+        
+
+        circle_marker_6bda01339c395f6e0b31acdc52de775d.bindPopup(popup_d0c93cec8495658eca0462e2d571bc14)
+        ;
+
+        
+    
+    
+            circle_marker_6bda01339c395f6e0b31acdc52de775d.bindTooltip(
+                `<div>
+                     Uttara Kannada  |  DCVI: 69.2  |  MEDIUM
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_65200d71de1c33d8e7cdb88ca669ca37 = L.circleMarker(
+                [12.97, 78.27],
+                {"bubblingMouseEvents": true, "color": "#198754", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#198754", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.6125, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bbe898a387855c7b494e4e02e9901a3f);
+        
+    
+        var popup_acc1cab6af0b67f106658140cb48813d = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_758838bf83c7a375a412fe2583aeb907 = $(`<div id="html_758838bf83c7a375a412fe2583aeb907" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial,sans-serif;font-size:13px;min-width:190px;padding:4px'>         <b style='font-size:15px'>K.G.F.</b>         <hr style='margin:5px 0;border-color:#ddd'>         <table style='width:100%'>         <tr><td><b>DCVI Score</b></td><td style='text-align:right'>68.9</td></tr>         <tr><td><b>Risk Level</b></td>             <td style='text-align:right;color:#198754;font-weight:bold'>LOW</td></tr>         <tr><td><b>Predicted 2024</b></td><td style='text-align:right'>240</td></tr>         <tr><td><b>Actual 2023</b></td><td style='text-align:right'>240</td></tr>         </table>     </div></div>`)[0];
+                popup_acc1cab6af0b67f106658140cb48813d.setContent(html_758838bf83c7a375a412fe2583aeb907);
+            
+        
+
+        circle_marker_65200d71de1c33d8e7cdb88ca669ca37.bindPopup(popup_acc1cab6af0b67f106658140cb48813d)
+        ;
+
+        
+    
+    
+            circle_marker_65200d71de1c33d8e7cdb88ca669ca37.bindTooltip(
+                `<div>
+                     K.G.F.  |  DCVI: 68.9  |  LOW
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2fc08788d7e14c3cf208e901f67bb908 = L.circleMarker(
+                [12.91, 74.85],
+                {"bubblingMouseEvents": true, "color": "#198754", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#198754", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.5875, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bbe898a387855c7b494e4e02e9901a3f);
+        
+    
+        var popup_55c7b855e5d6da361aaddafc27f7ba7d = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_cbc505b341eac09d3a16f1253503a61a = $(`<div id="html_cbc505b341eac09d3a16f1253503a61a" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial,sans-serif;font-size:13px;min-width:190px;padding:4px'>         <b style='font-size:15px'>Mangaluru City</b>         <hr style='margin:5px 0;border-color:#ddd'>         <table style='width:100%'>         <tr><td><b>DCVI Score</b></td><td style='text-align:right'>68.7</td></tr>         <tr><td><b>Risk Level</b></td>             <td style='text-align:right;color:#198754;font-weight:bold'>LOW</td></tr>         <tr><td><b>Predicted 2024</b></td><td style='text-align:right'>533</td></tr>         <tr><td><b>Actual 2023</b></td><td style='text-align:right'>474</td></tr>         </table>     </div></div>`)[0];
+                popup_55c7b855e5d6da361aaddafc27f7ba7d.setContent(html_cbc505b341eac09d3a16f1253503a61a);
+            
+        
+
+        circle_marker_2fc08788d7e14c3cf208e901f67bb908.bindPopup(popup_55c7b855e5d6da361aaddafc27f7ba7d)
+        ;
+
+        
+    
+    
+            circle_marker_2fc08788d7e14c3cf208e901f67bb908.bindTooltip(
+                `<div>
+                     Mangaluru City  |  DCVI: 68.7  |  LOW
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_994b822a5fbb173266d1e3949a0b1bf6 = L.circleMarker(
+                [14.23, 76.4],
+                {"bubblingMouseEvents": true, "color": "#198754", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#198754", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.4625, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bbe898a387855c7b494e4e02e9901a3f);
+        
+    
+        var popup_8e5494db74d978e0a0ab99b1d413f073 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_82d35b08ec437f76d586c979554bb2c9 = $(`<div id="html_82d35b08ec437f76d586c979554bb2c9" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial,sans-serif;font-size:13px;min-width:190px;padding:4px'>         <b style='font-size:15px'>Chitradurga</b>         <hr style='margin:5px 0;border-color:#ddd'>         <table style='width:100%'>         <tr><td><b>DCVI Score</b></td><td style='text-align:right'>67.7</td></tr>         <tr><td><b>Risk Level</b></td>             <td style='text-align:right;color:#198754;font-weight:bold'>LOW</td></tr>         <tr><td><b>Predicted 2024</b></td><td style='text-align:right'>1,684</td></tr>         <tr><td><b>Actual 2023</b></td><td style='text-align:right'>1,282</td></tr>         </table>     </div></div>`)[0];
+                popup_8e5494db74d978e0a0ab99b1d413f073.setContent(html_82d35b08ec437f76d586c979554bb2c9);
+            
+        
+
+        circle_marker_994b822a5fbb173266d1e3949a0b1bf6.bindPopup(popup_8e5494db74d978e0a0ab99b1d413f073)
+        ;
+
+        
+    
+    
+            circle_marker_994b822a5fbb173266d1e3949a0b1bf6.bindTooltip(
+                `<div>
+                     Chitradurga  |  DCVI: 67.7  |  LOW
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d41cecd794eddd49ec21061b804a7f6b = L.circleMarker(
+                [16.18, 75.69],
+                {"bubblingMouseEvents": true, "color": "#198754", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#198754", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.45, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bbe898a387855c7b494e4e02e9901a3f);
+        
+    
+        var popup_a27695e4a8ff6c3b0d17942390f1e23a = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_9a57b52e3ebb00a0ecb8d93724302d8e = $(`<div id="html_9a57b52e3ebb00a0ecb8d93724302d8e" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial,sans-serif;font-size:13px;min-width:190px;padding:4px'>         <b style='font-size:15px'>Bagalkot</b>         <hr style='margin:5px 0;border-color:#ddd'>         <table style='width:100%'>         <tr><td><b>DCVI Score</b></td><td style='text-align:right'>67.6</td></tr>         <tr><td><b>Risk Level</b></td>             <td style='text-align:right;color:#198754;font-weight:bold'>LOW</td></tr>         <tr><td><b>Predicted 2024</b></td><td style='text-align:right'>549</td></tr>         <tr><td><b>Actual 2023</b></td><td style='text-align:right'>636</td></tr>         </table>     </div></div>`)[0];
+                popup_a27695e4a8ff6c3b0d17942390f1e23a.setContent(html_9a57b52e3ebb00a0ecb8d93724302d8e);
+            
+        
+
+        circle_marker_d41cecd794eddd49ec21061b804a7f6b.bindPopup(popup_a27695e4a8ff6c3b0d17942390f1e23a)
+        ;
+
+        
+    
+    
+            circle_marker_d41cecd794eddd49ec21061b804a7f6b.bindTooltip(
+                `<div>
+                     Bagalkot  |  DCVI: 67.6  |  LOW
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_54f0467fc558e566ea377f5b9e63d044 = L.circleMarker(
+                [12.3, 76.65],
+                {"bubblingMouseEvents": true, "color": "#198754", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#198754", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.4375, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bbe898a387855c7b494e4e02e9901a3f);
+        
+    
+        var popup_281f18cb3146dce33cdac034d0656760 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_96115d218d4b8d5ce96edb879962013e = $(`<div id="html_96115d218d4b8d5ce96edb879962013e" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial,sans-serif;font-size:13px;min-width:190px;padding:4px'>         <b style='font-size:15px'>Mysuru City</b>         <hr style='margin:5px 0;border-color:#ddd'>         <table style='width:100%'>         <tr><td><b>DCVI Score</b></td><td style='text-align:right'>67.5</td></tr>         <tr><td><b>Risk Level</b></td>             <td style='text-align:right;color:#198754;font-weight:bold'>LOW</td></tr>         <tr><td><b>Predicted 2024</b></td><td style='text-align:right'>797</td></tr>         <tr><td><b>Actual 2023</b></td><td style='text-align:right'>750</td></tr>         </table>     </div></div>`)[0];
+                popup_281f18cb3146dce33cdac034d0656760.setContent(html_96115d218d4b8d5ce96edb879962013e);
+            
+        
+
+        circle_marker_54f0467fc558e566ea377f5b9e63d044.bindPopup(popup_281f18cb3146dce33cdac034d0656760)
+        ;
+
+        
+    
+    
+            circle_marker_54f0467fc558e566ea377f5b9e63d044.bindTooltip(
+                `<div>
+                     Mysuru City  |  DCVI: 67.5  |  LOW
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d5f459188497df3afc4d440a0a0f6e70 = L.circleMarker(
+                [11.92, 76.94],
+                {"bubblingMouseEvents": true, "color": "#198754", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#198754", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.4125, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bbe898a387855c7b494e4e02e9901a3f);
+        
+    
+        var popup_99127c9cd10159d18e2a487fbc711ac7 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_5ead0c1fa2aaa0ad4360ec8be37745b0 = $(`<div id="html_5ead0c1fa2aaa0ad4360ec8be37745b0" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial,sans-serif;font-size:13px;min-width:190px;padding:4px'>         <b style='font-size:15px'>Chamarajnagar</b>         <hr style='margin:5px 0;border-color:#ddd'>         <table style='width:100%'>         <tr><td><b>DCVI Score</b></td><td style='text-align:right'>67.3</td></tr>         <tr><td><b>Risk Level</b></td>             <td style='text-align:right;color:#198754;font-weight:bold'>LOW</td></tr>         <tr><td><b>Predicted 2024</b></td><td style='text-align:right'>576</td></tr>         <tr><td><b>Actual 2023</b></td><td style='text-align:right'>540</td></tr>         </table>     </div></div>`)[0];
+                popup_99127c9cd10159d18e2a487fbc711ac7.setContent(html_5ead0c1fa2aaa0ad4360ec8be37745b0);
+            
+        
+
+        circle_marker_d5f459188497df3afc4d440a0a0f6e70.bindPopup(popup_99127c9cd10159d18e2a487fbc711ac7)
+        ;
+
+        
+    
+    
+            circle_marker_d5f459188497df3afc4d440a0a0f6e70.bindTooltip(
+                `<div>
+                     Chamarajnagar  |  DCVI: 67.3  |  LOW
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_479e152dbdd3f843491d30ded92a88aa = L.circleMarker(
+                [15.43, 75.63],
+                {"bubblingMouseEvents": true, "color": "#198754", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#198754", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.4, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bbe898a387855c7b494e4e02e9901a3f);
+        
+    
+        var popup_94e168a4cc7c3aef064d65ded127369c = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_97bf147ee489810a36ea5cfd262bb785 = $(`<div id="html_97bf147ee489810a36ea5cfd262bb785" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial,sans-serif;font-size:13px;min-width:190px;padding:4px'>         <b style='font-size:15px'>Gadag</b>         <hr style='margin:5px 0;border-color:#ddd'>         <table style='width:100%'>         <tr><td><b>DCVI Score</b></td><td style='text-align:right'>67.2</td></tr>         <tr><td><b>Risk Level</b></td>             <td style='text-align:right;color:#198754;font-weight:bold'>LOW</td></tr>         <tr><td><b>Predicted 2024</b></td><td style='text-align:right'>283</td></tr>         <tr><td><b>Actual 2023</b></td><td style='text-align:right'>274</td></tr>         </table>     </div></div>`)[0];
+                popup_94e168a4cc7c3aef064d65ded127369c.setContent(html_97bf147ee489810a36ea5cfd262bb785);
+            
+        
+
+        circle_marker_479e152dbdd3f843491d30ded92a88aa.bindPopup(popup_94e168a4cc7c3aef064d65ded127369c)
+        ;
+
+        
+    
+    
+            circle_marker_479e152dbdd3f843491d30ded92a88aa.bindTooltip(
+                `<div>
+                     Gadag  |  DCVI: 67.2  |  LOW
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a679bc8e89b10573db4a486121cc0f61 = L.circleMarker(
+                [13.1, 77.45],
+                {"bubblingMouseEvents": true, "color": "#198754", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#198754", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.3375, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bbe898a387855c7b494e4e02e9901a3f);
+        
+    
+        var popup_7d4b5725a563e256f67b059ba931a3ac = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_cb3e5417c607c5659ea9cbcf782ccc1d = $(`<div id="html_cb3e5417c607c5659ea9cbcf782ccc1d" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial,sans-serif;font-size:13px;min-width:190px;padding:4px'>         <b style='font-size:15px'>Bengaluru District</b>         <hr style='margin:5px 0;border-color:#ddd'>         <table style='width:100%'>         <tr><td><b>DCVI Score</b></td><td style='text-align:right'>66.7</td></tr>         <tr><td><b>Risk Level</b></td>             <td style='text-align:right;color:#198754;font-weight:bold'>LOW</td></tr>         <tr><td><b>Predicted 2024</b></td><td style='text-align:right'>1,690</td></tr>         <tr><td><b>Actual 2023</b></td><td style='text-align:right'>1,418</td></tr>         </table>     </div></div>`)[0];
+                popup_7d4b5725a563e256f67b059ba931a3ac.setContent(html_cb3e5417c607c5659ea9cbcf782ccc1d);
+            
+        
+
+        circle_marker_a679bc8e89b10573db4a486121cc0f61.bindPopup(popup_7d4b5725a563e256f67b059ba931a3ac)
+        ;
+
+        
+    
+    
+            circle_marker_a679bc8e89b10573db4a486121cc0f61.bindTooltip(
+                `<div>
+                     Bengaluru District  |  DCVI: 66.7  |  LOW
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a28bf71a494c2699c0ec763db19da07e = L.circleMarker(
+                [15.31, 75.71],
+                {"bubblingMouseEvents": true, "color": "#198754", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#198754", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.3375, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bbe898a387855c7b494e4e02e9901a3f);
+        
+    
+        var popup_428afd42d33331209863d9529083c513 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_aa42dd1f177315593605b324bbc1fe3c = $(`<div id="html_aa42dd1f177315593605b324bbc1fe3c" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial,sans-serif;font-size:13px;min-width:190px;padding:4px'>         <b style='font-size:15px'>K.Railways</b>         <hr style='margin:5px 0;border-color:#ddd'>         <table style='width:100%'>         <tr><td><b>DCVI Score</b></td><td style='text-align:right'>66.7</td></tr>         <tr><td><b>Risk Level</b></td>             <td style='text-align:right;color:#198754;font-weight:bold'>LOW</td></tr>         <tr><td><b>Predicted 2024</b></td><td style='text-align:right'>211</td></tr>         <tr><td><b>Actual 2023</b></td><td style='text-align:right'>18</td></tr>         </table>     </div></div>`)[0];
+                popup_428afd42d33331209863d9529083c513.setContent(html_aa42dd1f177315593605b324bbc1fe3c);
+            
+        
+
+        circle_marker_a28bf71a494c2699c0ec763db19da07e.bindPopup(popup_428afd42d33331209863d9529083c513)
+        ;
+
+        
+    
+    
+            circle_marker_a28bf71a494c2699c0ec763db19da07e.bindTooltip(
+                `<div>
+                     K.Railways  |  DCVI: 66.7  |  LOW
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f5f12bfc2155f72ceabf81dea218e2ca = L.circleMarker(
+                [16.77, 77.14],
+                {"bubblingMouseEvents": true, "color": "#198754", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#198754", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.2875, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bbe898a387855c7b494e4e02e9901a3f);
+        
+    
+        var popup_ccee3349843b0d922678be739251af43 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_c8c424f76e79a2a86d0ab5db4ce14b41 = $(`<div id="html_c8c424f76e79a2a86d0ab5db4ce14b41" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial,sans-serif;font-size:13px;min-width:190px;padding:4px'>         <b style='font-size:15px'>Yadgiri</b>         <hr style='margin:5px 0;border-color:#ddd'>         <table style='width:100%'>         <tr><td><b>DCVI Score</b></td><td style='text-align:right'>66.3</td></tr>         <tr><td><b>Risk Level</b></td>             <td style='text-align:right;color:#198754;font-weight:bold'>LOW</td></tr>         <tr><td><b>Predicted 2024</b></td><td style='text-align:right'>512</td></tr>         <tr><td><b>Actual 2023</b></td><td style='text-align:right'>466</td></tr>         </table>     </div></div>`)[0];
+                popup_ccee3349843b0d922678be739251af43.setContent(html_c8c424f76e79a2a86d0ab5db4ce14b41);
+            
+        
+
+        circle_marker_f5f12bfc2155f72ceabf81dea218e2ca.bindPopup(popup_ccee3349843b0d922678be739251af43)
+        ;
+
+        
+    
+    
+            circle_marker_f5f12bfc2155f72ceabf81dea218e2ca.bindTooltip(
+                `<div>
+                     Yadgiri  |  DCVI: 66.3  |  LOW
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c6b743cd87a9a791a7a5e2f436a723eb = L.circleMarker(
+                [15.85, 74.5],
+                {"bubblingMouseEvents": true, "color": "#198754", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#198754", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.15, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bbe898a387855c7b494e4e02e9901a3f);
+        
+    
+        var popup_f9c085e48caf428202c56a53eee5bf3c = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_a02e6a0e060dd43bfbce91b2df714937 = $(`<div id="html_a02e6a0e060dd43bfbce91b2df714937" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial,sans-serif;font-size:13px;min-width:190px;padding:4px'>         <b style='font-size:15px'>Belagavi City</b>         <hr style='margin:5px 0;border-color:#ddd'>         <table style='width:100%'>         <tr><td><b>DCVI Score</b></td><td style='text-align:right'>65.2</td></tr>         <tr><td><b>Risk Level</b></td>             <td style='text-align:right;color:#198754;font-weight:bold'>LOW</td></tr>         <tr><td><b>Predicted 2024</b></td><td style='text-align:right'>411</td></tr>         <tr><td><b>Actual 2023</b></td><td style='text-align:right'>410</td></tr>         </table>     </div></div>`)[0];
+                popup_f9c085e48caf428202c56a53eee5bf3c.setContent(html_a02e6a0e060dd43bfbce91b2df714937);
+            
+        
+
+        circle_marker_c6b743cd87a9a791a7a5e2f436a723eb.bindPopup(popup_f9c085e48caf428202c56a53eee5bf3c)
+        ;
+
+        
+    
+    
+            circle_marker_c6b743cd87a9a791a7a5e2f436a723eb.bindTooltip(
+                `<div>
+                     Belagavi City  |  DCVI: 65.2  |  LOW
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5df1722f5b52e98be2549bdb898c945b = L.circleMarker(
+                [15.32, 76.46],
+                {"bubblingMouseEvents": true, "color": "#198754", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#198754", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.9125, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bbe898a387855c7b494e4e02e9901a3f);
+        
+    
+        var popup_4c550dd42c1a84c8aee74cf9db6c9fa8 = L.popup({
+  "maxWidth": 230,
+});
+
+        
+            
+                var html_8f77cd6517faa21eeac4a292e01451c1 = $(`<div id="html_8f77cd6517faa21eeac4a292e01451c1" style="width: 100.0%; height: 100.0%;">     <div style='font-family:Arial,sans-serif;font-size:13px;min-width:190px;padding:4px'>         <b style='font-size:15px'>Vijayanagara</b>         <hr style='margin:5px 0;border-color:#ddd'>         <table style='width:100%'>         <tr><td><b>DCVI Score</b></td><td style='text-align:right'>63.3</td></tr>         <tr><td><b>Risk Level</b></td>             <td style='text-align:right;color:#198754;font-weight:bold'>LOW</td></tr>         <tr><td><b>Predicted 2024</b></td><td style='text-align:right'>579</td></tr>         <tr><td><b>Actual 2023</b></td><td style='text-align:right'>514</td></tr>         </table>     </div></div>`)[0];
+                popup_4c550dd42c1a84c8aee74cf9db6c9fa8.setContent(html_8f77cd6517faa21eeac4a292e01451c1);
+            
+        
+
+        circle_marker_5df1722f5b52e98be2549bdb898c945b.bindPopup(popup_4c550dd42c1a84c8aee74cf9db6c9fa8)
+        ;
+
+        
+    
+    
+            circle_marker_5df1722f5b52e98be2549bdb898c945b.bindTooltip(
+                `<div>
+                     Vijayanagara  |  DCVI: 63.3  |  LOW
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_bbe898a387855c7b494e4e02e9901a3f.addTo(map_6ba3f9ee201edd072efd561c9781004c);
+        
+    
+            var feature_group_b0a25cf2316a5660354aeef42fe45da0 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var heat_map_e0a8d4936324b65d804849d36178658c = L.heatLayer(
+                [[12.97, 77.59, 85.6], [13.93, 75.57, 84.3], [15.7, 74.9, 82.6], [16.2, 77.35, 80.7], [12.84, 74.86, 80.2], [15.46, 75.01, 79.8], [14.46, 75.92, 78.7], [12.72, 77.28, 78.7], [15.35, 76.15, 78.1], [13.32, 75.77, 76.7], [16.83, 75.71, 74.3], [14.8, 75.4, 74.1], [12.52, 76.9, 74.0], [12.2, 76.4, 73.6], [17.4, 76.9, 73.4], [17.91, 77.52, 73.2], [13.44, 77.73, 73.1], [12.42, 75.74, 72.9], [15.15, 76.93, 72.3], [15.36, 75.12, 72.1], [17.33, 76.83, 71.8], [13.34, 74.75, 71.6], [13.14, 78.13, 71.4], [13.34, 77.1, 71.2], [13.0, 76.1, 70.9], [14.79, 74.13, 69.2], [12.97, 78.27, 68.9], [12.91, 74.85, 68.7], [14.23, 76.4, 67.7], [16.18, 75.69, 67.6], [12.3, 76.65, 67.5], [11.92, 76.94, 67.3], [15.43, 75.63, 67.2], [13.1, 77.45, 66.7], [15.31, 75.71, 66.7], [16.77, 77.14, 66.3], [15.85, 74.5, 65.2], [15.32, 76.46, 63.3]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 20,
+  "radius": 55,
+  "blur": 20,
+  "gradient": {
+  "0.3": "blue",
+  "0.5": "cyan",
+  "0.7": "lime",
+  "0.85": "orange",
+  "1.0": "red",
+},
+}
+            );
+        
+    
+            heat_map_e0a8d4936324b65d804849d36178658c.addTo(feature_group_b0a25cf2316a5660354aeef42fe45da0);
+        
+    
+            feature_group_b0a25cf2316a5660354aeef42fe45da0.addTo(map_6ba3f9ee201edd072efd561c9781004c);
+        
+    
+            var layer_control_413af80830b955dfb50559647af37f38_layers = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_ae1cb356e9594d0caa9d91922171e128,
+                },
+                overlays :  {
+                    "District Markers" : feature_group_bbe898a387855c7b494e4e02e9901a3f,
+                    "DCVI Heatmap" : feature_group_b0a25cf2316a5660354aeef42fe45da0,
+                },
+            };
+            let layer_control_413af80830b955dfb50559647af37f38 = L.control.layers(
+                layer_control_413af80830b955dfb50559647af37f38_layers.base_layers,
+                layer_control_413af80830b955dfb50559647af37f38_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_6ba3f9ee201edd072efd561c9781004c);
+
+        
+</script>
+</html>

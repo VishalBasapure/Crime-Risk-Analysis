@@ -1,0 +1,1407 @@
+district,year,crime_category,count
+bagalkot,2020,cyber_crime,3
+bagalkot,2020,crime_against_children,5
+bagalkot,2020,crime_against_children,100
+bagalkot,2020,violent_crime,1
+bagalkot,2020,crime_against_children,36
+bagalkot,2020,crime_against_children,121
+bagalkot,2021,crime_against_women,9
+bagalkot,2021,crime_against_women,159
+bagalkot,2021,crime_against_women,34
+bagalkot,2021,crime_against_women,3
+bagalkot,2021,crime_against_women,2
+bagalkot,2021,crime_against_women,29
+bagalkot,2021,crime_against_women,28
+bagalkot,2021,crime_against_children,42
+bagalkot,2021,crime_against_women,12
+ballari,2020,crime_against_children,4
+ballari,2020,cyber_crime,5
+ballari,2020,crime_against_children,1
+ballari,2020,crime_against_children,5
+ballari,2020,crime_against_children,37
+ballari,2020,violent_crime,2
+ballari,2020,other_crime,3
+ballari,2020,crime_against_children,4
+ballari,2020,crime_against_children,82
+ballari,2021,crime_against_women,81
+ballari,2021,crime_against_women,65
+ballari,2021,crime_against_women,2
+ballari,2021,crime_against_women,1
+ballari,2021,crime_against_women,45
+ballari,2021,crime_against_women,1
+ballari,2021,crime_against_women,28
+ballari,2021,crime_against_children,41
+ballari,2021,crime_against_women,9
+belagavi city,2020,crime_against_children,1
+belagavi city,2020,violent_crime,3
+belagavi city,2020,cyber_crime,6
+belagavi city,2020,violent_crime,1
+belagavi city,2020,crime_against_children,68
+belagavi city,2020,violent_crime,4
+belagavi city,2020,other_crime,34
+belagavi city,2020,crime_against_children,56
+belagavi city,2020,violent_crime,3
+belagavi city,2021,crime_against_women,7
+belagavi city,2021,crime_against_women,43
+belagavi city,2021,crime_against_women,88
+belagavi city,2021,crime_against_women,7
+belagavi city,2021,crime_against_women,2
+belagavi city,2021,crime_against_women,2
+belagavi city,2021,crime_against_women,1
+belagavi city,2021,crime_against_women,3
+belagavi city,2021,crime_against_women,1
+belagavi city,2021,crime_against_women,17
+belagavi city,2021,crime_against_children,28
+belagavi city,2021,crime_against_women,6
+belagavi district,2020,cyber_crime,14
+belagavi district,2020,crime_against_children,3
+belagavi district,2020,crime_against_children,83
+belagavi district,2020,violent_crime,7
+belagavi district,2020,other_crime,11
+belagavi district,2020,crime_against_children,19
+belagavi district,2020,crime_against_children,253
+belagavi district,2021,crime_against_women,11
+belagavi district,2021,crime_against_women,276
+belagavi district,2021,crime_against_women,127
+belagavi district,2021,crime_against_women,14
+belagavi district,2021,crime_against_women,3
+belagavi district,2021,crime_against_women,17
+belagavi district,2021,crime_against_women,1
+belagavi district,2021,crime_against_women,74
+belagavi district,2021,crime_against_children,126
+belagavi district,2021,crime_against_women,22
+bengaluru city,2020,crime_against_children,3
+bengaluru city,2020,violent_crime,3
+bengaluru city,2020,crime_against_children,9
+bengaluru city,2020,cyber_crime,136
+bengaluru city,2020,crime_against_children,17
+bengaluru city,2020,violent_crime,3
+bengaluru city,2020,crime_against_children,74
+bengaluru city,2020,crime_against_children,2650
+bengaluru city,2020,violent_crime,9
+bengaluru city,2020,other_crime,57
+bengaluru city,2020,other_crime,2
+bengaluru city,2020,crime_against_children,11
+bengaluru city,2020,crime_against_children,931
+bengaluru city,2020,violent_crime,5
+bengaluru city,2021,crime_against_women,87
+bengaluru city,2021,violent_crime,5
+bengaluru city,2021,crime_against_women,757
+bengaluru city,2021,violent_crime,2
+bengaluru city,2021,crime_against_women,584
+bengaluru city,2021,crime_against_women,73
+bengaluru city,2021,crime_against_women,29
+bengaluru city,2021,crime_against_women,964
+bengaluru city,2021,crime_against_women,7
+bengaluru city,2021,crime_against_women,155
+bengaluru city,2021,crime_against_women,29
+bengaluru city,2021,crime_against_women,613
+bengaluru city,2021,crime_against_children,468
+bengaluru city,2021,crime_against_women,151
+bengaluru district,2020,crime_against_children,2
+bengaluru district,2020,cyber_crime,16
+bengaluru district,2020,crime_against_children,2
+bengaluru district,2020,crime_against_children,2
+bengaluru district,2020,crime_against_children,241
+bengaluru district,2020,violent_crime,4
+bengaluru district,2020,other_crime,1
+bengaluru district,2020,crime_against_children,5
+bengaluru district,2020,crime_against_children,206
+bengaluru district,2021,crime_against_women,15
+bengaluru district,2021,crime_against_women,156
+bengaluru district,2021,crime_against_women,149
+bengaluru district,2021,crime_against_women,16
+bengaluru district,2021,crime_against_women,14
+bengaluru district,2021,crime_against_women,34
+bengaluru district,2021,crime_against_women,5
+bengaluru district,2021,crime_against_women,2
+bengaluru district,2021,crime_against_women,194
+bengaluru district,2021,crime_against_children,103
+bengaluru district,2021,crime_against_women,21
+bidar,2020,cyber_crime,7
+bidar,2020,crime_against_children,2
+bidar,2020,violent_crime,1
+bidar,2020,crime_against_children,116
+bidar,2020,violent_crime,6
+bidar,2020,other_crime,36
+bidar,2020,crime_against_children,102
+bidar,2020,violent_crime,2
+bidar,2021,crime_against_women,8
+bidar,2021,crime_against_women,54
+bidar,2021,crime_against_women,1
+bidar,2021,crime_against_women,110
+bidar,2021,crime_against_women,2
+bidar,2021,crime_against_women,4
+bidar,2021,crime_against_women,26
+bidar,2021,crime_against_women,4
+bidar,2021,crime_against_women,1
+bidar,2021,crime_against_women,11
+bidar,2021,crime_against_children,51
+bidar,2021,crime_against_women,11
+chamarajnagar,2020,crime_against_children,2
+chamarajnagar,2020,crime_against_children,1
+chamarajnagar,2020,crime_against_children,21
+chamarajnagar,2020,other_crime,44
+chamarajnagar,2020,crime_against_children,96
+chamarajnagar,2021,crime_against_women,3
+chamarajnagar,2021,crime_against_women,155
+chamarajnagar,2021,crime_against_women,19
+chamarajnagar,2021,crime_against_women,1
+chamarajnagar,2021,crime_against_women,29
+chamarajnagar,2021,crime_against_women,2
+chamarajnagar,2021,crime_against_women,4
+chamarajnagar,2021,crime_against_children,48
+chamarajnagar,2021,crime_against_women,9
+chikkaballapura,2020,crime_against_children,1
+chikkaballapura,2020,violent_crime,2
+chikkaballapura,2020,crime_against_children,2
+chikkaballapura,2020,crime_against_children,1
+chikkaballapura,2020,violent_crime,1
+chikkaballapura,2020,crime_against_children,102
+chikkaballapura,2020,violent_crime,1
+chikkaballapura,2020,other_crime,42
+chikkaballapura,2020,crime_against_children,8
+chikkaballapura,2020,crime_against_children,276
+chikkaballapura,2020,violent_crime,1
+chikkaballapura,2021,crime_against_women,13
+chikkaballapura,2021,crime_against_women,146
+chikkaballapura,2021,crime_against_women,51
+chikkaballapura,2021,crime_against_women,11
+chikkaballapura,2021,crime_against_women,36
+chikkaballapura,2021,crime_against_women,1
+chikkaballapura,2021,crime_against_women,1
+chikkaballapura,2021,crime_against_women,3
+chikkaballapura,2021,crime_against_children,1
+chikkaballapura,2021,crime_against_children,138
+chikkaballapura,2021,crime_against_women,9
+chikkamagaluru,2020,violent_crime,2
+chikkamagaluru,2020,violent_crime,1
+chikkamagaluru,2020,crime_against_children,1
+chikkamagaluru,2020,crime_against_children,76
+chikkamagaluru,2020,violent_crime,1
+chikkamagaluru,2020,other_crime,6
+chikkamagaluru,2020,crime_against_children,6
+chikkamagaluru,2020,crime_against_children,244
+chikkamagaluru,2020,violent_crime,4
+chikkamagaluru,2021,crime_against_women,6
+chikkamagaluru,2021,crime_against_women,223
+chikkamagaluru,2021,crime_against_women,43
+chikkamagaluru,2021,crime_against_women,4
+chikkamagaluru,2021,crime_against_women,40
+chikkamagaluru,2021,crime_against_women,2
+chikkamagaluru,2021,crime_against_women,1
+chikkamagaluru,2021,crime_against_women,1
+chikkamagaluru,2021,crime_against_children,122
+chikkamagaluru,2021,crime_against_women,6
+chitradurga,2020,crime_against_children,9
+chitradurga,2020,crime_against_children,2
+chitradurga,2020,crime_against_children,1
+chitradurga,2020,crime_against_children,246
+chitradurga,2020,violent_crime,2
+chitradurga,2020,other_crime,15
+chitradurga,2020,crime_against_children,2
+chitradurga,2020,crime_against_children,192
+chitradurga,2021,crime_against_women,13
+chitradurga,2021,crime_against_women,383
+chitradurga,2021,crime_against_women,72
+chitradurga,2021,crime_against_women,1
+chitradurga,2021,crime_against_women,7
+chitradurga,2021,crime_against_women,47
+chitradurga,2021,crime_against_women,1
+chitradurga,2021,crime_against_women,4
+chitradurga,2021,crime_against_women,5
+chitradurga,2021,crime_against_children,96
+chitradurga,2021,crime_against_women,12
+dakshina kannada,2020,crime_against_children,1
+dakshina kannada,2020,cyber_crime,12
+dakshina kannada,2020,crime_against_children,5
+dakshina kannada,2020,crime_against_children,34
+dakshina kannada,2020,violent_crime,1
+dakshina kannada,2020,other_crime,63
+dakshina kannada,2020,crime_against_children,190
+dakshina kannada,2021,crime_against_women,2
+dakshina kannada,2021,crime_against_women,57
+dakshina kannada,2021,crime_against_women,31
+dakshina kannada,2021,crime_against_women,6
+dakshina kannada,2021,crime_against_women,4
+dakshina kannada,2021,crime_against_women,2
+dakshina kannada,2021,crime_against_women,12
+dakshina kannada,2021,crime_against_children,65
+dakshina kannada,2021,crime_against_women,10
+davanagere,2020,crime_against_children,4
+davanagere,2020,cyber_crime,3
+davanagere,2020,crime_against_children,5
+davanagere,2020,crime_against_children,3
+davanagere,2020,crime_against_children,354
+davanagere,2020,violent_crime,1
+davanagere,2020,other_crime,3
+davanagere,2020,other_crime,1
+davanagere,2020,crime_against_children,6
+davanagere,2020,crime_against_children,188
+davanagere,2021,crime_against_women,9
+davanagere,2021,crime_against_women,218
+davanagere,2021,crime_against_women,1
+davanagere,2021,crime_against_women,59
+davanagere,2021,crime_against_women,3
+davanagere,2021,crime_against_women,7
+davanagere,2021,crime_against_women,93
+davanagere,2021,crime_against_women,1
+davanagere,2021,crime_against_women,1
+davanagere,2021,crime_against_women,69
+davanagere,2021,crime_against_women,2
+davanagere,2021,crime_against_children,94
+davanagere,2021,crime_against_women,17
+dharwad,2020,cyber_crime,1
+dharwad,2020,crime_against_children,4
+dharwad,2020,crime_against_children,18
+dharwad,2020,other_crime,16
+dharwad,2020,other_crime,1
+dharwad,2020,crime_against_children,6
+dharwad,2020,crime_against_children,66
+dharwad,2021,crime_against_women,1
+dharwad,2021,crime_against_women,47
+dharwad,2021,crime_against_women,1
+dharwad,2021,crime_against_women,42
+dharwad,2021,crime_against_women,1
+dharwad,2021,crime_against_women,5
+dharwad,2021,crime_against_children,33
+dharwad,2021,crime_against_women,3
+gadag,2020,cyber_crime,3
+gadag,2020,crime_against_children,2
+gadag,2020,crime_against_children,42
+gadag,2020,violent_crime,1
+gadag,2020,other_crime,5
+gadag,2020,crime_against_children,5
+gadag,2020,crime_against_children,101
+gadag,2021,crime_against_women,4
+gadag,2021,crime_against_women,56
+gadag,2021,crime_against_women,23
+gadag,2021,crime_against_women,3
+gadag,2021,crime_against_women,2
+gadag,2021,crime_against_women,5
+gadag,2021,crime_against_women,1
+gadag,2021,crime_against_women,1
+gadag,2021,crime_against_women,1
+gadag,2021,crime_against_children,34
+gadag,2021,crime_against_women,7
+hassan,2020,cyber_crime,4
+hassan,2020,crime_against_children,1
+hassan,2020,crime_against_children,1
+hassan,2020,crime_against_children,136
+hassan,2020,other_crime,15
+hassan,2020,other_crime,3
+hassan,2020,crime_against_children,13
+hassan,2020,crime_against_children,304
+hassan,2021,crime_against_women,9
+hassan,2021,crime_against_women,273
+hassan,2021,crime_against_women,50
+hassan,2021,crime_against_women,4
+hassan,2021,crime_against_women,5
+hassan,2021,crime_against_women,78
+hassan,2021,crime_against_women,66
+hassan,2021,crime_against_children,152
+hassan,2021,crime_against_women,13
+haveri,2020,crime_against_children,1
+haveri,2020,crime_against_children,2
+haveri,2020,crime_against_children,63
+haveri,2020,other_crime,1
+haveri,2020,crime_against_children,1
+haveri,2020,crime_against_children,156
+haveri,2021,crime_against_women,6
+haveri,2021,crime_against_women,112
+haveri,2021,crime_against_women,36
+haveri,2021,crime_against_women,4
+haveri,2021,crime_against_women,31
+haveri,2021,crime_against_women,58
+haveri,2021,crime_against_children,78
+haveri,2021,crime_against_women,13
+hubballi dharwad city,2020,crime_against_children,1
+hubballi dharwad city,2020,cyber_crime,10
+hubballi dharwad city,2020,crime_against_children,4
+hubballi dharwad city,2020,crime_against_children,60
+hubballi dharwad city,2020,crime_against_children,2
+hubballi dharwad city,2020,crime_against_children,78
+hubballi dharwad city,2021,crime_against_women,4
+hubballi dharwad city,2021,crime_against_women,55
+hubballi dharwad city,2021,crime_against_women,87
+hubballi dharwad city,2021,crime_against_women,9
+hubballi dharwad city,2021,crime_against_women,2
+hubballi dharwad city,2021,crime_against_women,6
+hubballi dharwad city,2021,crime_against_women,5
+hubballi dharwad city,2021,crime_against_children,39
+hubballi dharwad city,2021,crime_against_women,10
+k.g.f.,2020,crime_against_children,2
+k.g.f.,2020,cyber_crime,8
+k.g.f.,2020,crime_against_children,1
+k.g.f.,2020,crime_against_children,17
+k.g.f.,2020,violent_crime,1
+k.g.f.,2020,crime_against_children,1
+k.g.f.,2020,crime_against_children,60
+k.g.f.,2021,crime_against_women,3
+k.g.f.,2021,crime_against_women,39
+k.g.f.,2021,crime_against_women,13
+k.g.f.,2021,crime_against_women,4
+k.g.f.,2021,crime_against_women,1
+k.g.f.,2021,crime_against_women,17
+k.g.f.,2021,crime_against_women,8
+k.g.f.,2021,crime_against_children,30
+k.g.f.,2021,crime_against_women,5
+k.railways,2020,crime_against_children,1
+k.railways,2020,crime_against_children,2
+k.railways,2020,crime_against_children,7
+k.railways,2020,crime_against_children,2
+k.railways,2021,crime_against_women,3
+k.railways,2021,crime_against_women,3
+k.railways,2021,crime_against_women,1
+k.railways,2021,crime_against_children,2
+kalaburgi,2020,crime_against_children,2
+kalaburgi,2020,crime_against_women,1
+kalaburgi,2020,violent_crime,1
+kalaburgi,2020,crime_against_children,2
+kalaburgi,2020,cyber_crime,6
+kalaburgi,2020,crime_against_children,3
+kalaburgi,2020,crime_against_children,1
+kalaburgi,2020,crime_against_children,97
+kalaburgi,2020,violent_crime,10
+kalaburgi,2020,other_crime,21
+kalaburgi,2020,crime_against_children,4
+kalaburgi,2020,crime_against_children,106
+kalaburgi,2021,crime_against_women,10
+kalaburgi,2021,crime_against_women,117
+kalaburgi,2021,crime_against_women,101
+kalaburgi,2021,crime_against_women,1
+kalaburgi,2021,crime_against_women,3
+kalaburgi,2021,crime_against_women,3
+kalaburgi,2021,crime_against_women,1
+kalaburgi,2021,crime_against_women,29
+kalaburgi,2021,crime_against_children,1
+kalaburgi,2021,crime_against_women,1
+kalaburgi,2021,crime_against_children,55
+kalaburgi,2021,crime_against_women,12
+kalaburgi city,2020,cyber_crime,4
+kalaburgi city,2020,crime_against_children,6
+kalaburgi city,2020,crime_against_children,133
+kalaburgi city,2020,violent_crime,3
+kalaburgi city,2020,other_crime,8
+kalaburgi city,2020,crime_against_children,4
+kalaburgi city,2020,crime_against_children,36
+kalaburgi city,2021,crime_against_women,4
+kalaburgi city,2021,crime_against_women,41
+kalaburgi city,2021,crime_against_women,1
+kalaburgi city,2021,crime_against_women,53
+kalaburgi city,2021,crime_against_women,3
+kalaburgi city,2021,crime_against_women,50
+kalaburgi city,2021,crime_against_women,3
+kalaburgi city,2021,crime_against_women,1
+kalaburgi city,2021,crime_against_children,5
+kalaburgi city,2021,crime_against_women,1
+kalaburgi city,2021,crime_against_children,17
+kalaburgi city,2021,crime_against_women,7
+kodagu,2020,violent_crime,1
+kodagu,2020,cyber_crime,1
+kodagu,2020,crime_against_children,2
+kodagu,2020,crime_against_children,66
+kodagu,2020,other_crime,18
+kodagu,2020,crime_against_children,2
+kodagu,2020,crime_against_children,132
+kodagu,2020,violent_crime,6
+kodagu,2021,crime_against_women,3
+kodagu,2021,crime_against_women,53
+kodagu,2021,crime_against_women,24
+kodagu,2021,crime_against_women,2
+kodagu,2021,crime_against_women,2
+kodagu,2021,crime_against_women,1
+kodagu,2021,crime_against_women,27
+kodagu,2021,crime_against_children,66
+kodagu,2021,crime_against_women,8
+kolar,2020,cyber_crime,3
+kolar,2020,crime_against_children,2
+kolar,2020,crime_against_children,62
+kolar,2020,violent_crime,3
+kolar,2020,other_crime,6
+kolar,2020,other_crime,2
+kolar,2020,crime_against_children,5
+kolar,2020,crime_against_children,138
+kolar,2021,crime_against_women,1
+kolar,2021,crime_against_women,129
+kolar,2021,crime_against_women,23
+kolar,2021,crime_against_women,3
+kolar,2021,crime_against_women,7
+kolar,2021,crime_against_women,36
+kolar,2021,crime_against_women,1
+kolar,2021,crime_against_women,52
+kolar,2021,crime_against_children,69
+kolar,2021,crime_against_women,12
+koppal,2020,cyber_crime,4
+koppal,2020,crime_against_children,4
+koppal,2020,crime_against_children,40
+koppal,2020,violent_crime,1
+koppal,2020,other_crime,28
+koppal,2020,crime_against_children,4
+koppal,2020,crime_against_children,142
+koppal,2021,crime_against_women,2
+koppal,2021,crime_against_women,109
+koppal,2021,crime_against_women,96
+koppal,2021,crime_against_women,4
+koppal,2021,crime_against_women,4
+koppal,2021,crime_against_women,1
+koppal,2021,crime_against_women,1
+koppal,2021,crime_against_women,2
+koppal,2021,crime_against_women,31
+koppal,2021,crime_against_children,1
+koppal,2021,crime_against_children,71
+koppal,2021,crime_against_women,8
+mandya,2020,crime_against_children,1
+mandya,2020,crime_against_children,4
+mandya,2020,crime_against_children,1
+mandya,2020,crime_against_children,228
+mandya,2020,violent_crime,10
+mandya,2020,other_crime,41
+mandya,2020,crime_against_children,10
+mandya,2020,crime_against_children,197
+mandya,2021,crime_against_women,11
+mandya,2021,crime_against_women,342
+mandya,2021,crime_against_women,92
+mandya,2021,crime_against_women,5
+mandya,2021,crime_against_women,39
+mandya,2021,crime_against_women,3
+mandya,2021,crime_against_women,1
+mandya,2021,crime_against_women,2
+mandya,2021,crime_against_women,5
+mandya,2021,crime_against_women,1
+mandya,2021,crime_against_children,99
+mandya,2021,crime_against_women,10
+mangaluru city,2020,cyber_crime,22
+mangaluru city,2020,crime_against_children,1
+mangaluru city,2020,crime_against_children,3
+mangaluru city,2020,crime_against_children,60
+mangaluru city,2020,violent_crime,1
+mangaluru city,2020,other_crime,36
+mangaluru city,2020,crime_against_children,134
+mangaluru city,2021,crime_against_women,4
+mangaluru city,2021,crime_against_women,83
+mangaluru city,2021,crime_against_women,32
+mangaluru city,2021,crime_against_women,8
+mangaluru city,2021,crime_against_women,3
+mangaluru city,2021,crime_against_women,17
+mangaluru city,2021,crime_against_women,3
+mangaluru city,2021,crime_against_women,2
+mangaluru city,2021,crime_against_women,4
+mangaluru city,2021,crime_against_women,2
+mangaluru city,2021,crime_against_children,67
+mangaluru city,2021,crime_against_women,12
+mysuru city,2020,crime_against_children,4
+mysuru city,2020,cyber_crime,5
+mysuru city,2020,crime_against_children,5
+mysuru city,2020,crime_against_children,124
+mysuru city,2020,violent_crime,1
+mysuru city,2020,crime_against_children,3
+mysuru city,2020,crime_against_children,131
+mysuru city,2020,violent_crime,1
+mysuru city,2021,crime_against_women,7
+mysuru city,2021,crime_against_women,81
+mysuru city,2021,crime_against_women,43
+mysuru city,2021,crime_against_women,5
+mysuru city,2021,crime_against_women,3
+mysuru city,2021,crime_against_women,119
+mysuru city,2021,crime_against_women,3
+mysuru city,2021,crime_against_women,45
+mysuru city,2021,crime_against_children,54
+mysuru city,2021,crime_against_women,15
+mysuru district,2020,crime_against_children,2
+mysuru district,2020,cyber_crime,7
+mysuru district,2020,crime_against_children,1
+mysuru district,2020,crime_against_children,1
+mysuru district,2020,crime_against_children,1
+mysuru district,2020,crime_against_children,245
+mysuru district,2020,violent_crime,4
+mysuru district,2020,other_crime,64
+mysuru district,2020,crime_against_children,9
+mysuru district,2020,crime_against_children,270
+mysuru district,2021,crime_against_women,6
+mysuru district,2021,crime_against_women,284
+mysuru district,2021,crime_against_women,97
+mysuru district,2021,crime_against_women,9
+mysuru district,2021,crime_against_women,8
+mysuru district,2021,crime_against_women,23
+mysuru district,2021,crime_against_women,7
+mysuru district,2021,crime_against_women,4
+mysuru district,2021,crime_against_women,1
+mysuru district,2021,crime_against_children,135
+mysuru district,2021,crime_against_women,22
+raichur,2020,crime_against_children,6
+raichur,2020,cyber_crime,6
+raichur,2020,crime_against_children,1
+raichur,2020,crime_against_children,2
+raichur,2020,crime_against_children,68
+raichur,2020,violent_crime,3
+raichur,2020,other_crime,36
+raichur,2020,crime_against_children,1
+raichur,2020,crime_against_children,104
+raichur,2021,crime_against_women,7
+raichur,2021,crime_against_women,217
+raichur,2021,crime_against_women,115
+raichur,2021,crime_against_women,6
+raichur,2021,crime_against_women,6
+raichur,2021,crime_against_women,60
+raichur,2021,crime_against_women,3
+raichur,2021,crime_against_women,25
+raichur,2021,crime_against_children,52
+raichur,2021,crime_against_women,24
+ramanagara,2020,crime_against_children,5
+ramanagara,2020,cyber_crime,5
+ramanagara,2020,crime_against_children,1
+ramanagara,2020,crime_against_children,1
+ramanagara,2020,crime_against_children,236
+ramanagara,2020,violent_crime,2
+ramanagara,2020,other_crime,1
+ramanagara,2020,crime_against_children,14
+ramanagara,2020,crime_against_children,184
+ramanagara,2021,crime_against_women,291
+ramanagara,2021,crime_against_women,46
+ramanagara,2021,crime_against_women,5
+ramanagara,2021,crime_against_women,4
+ramanagara,2021,crime_against_women,68
+ramanagara,2021,crime_against_women,2
+ramanagara,2021,crime_against_women,1
+ramanagara,2021,crime_against_women,82
+ramanagara,2021,crime_against_children,92
+ramanagara,2021,crime_against_women,14
+shimoga,2020,crime_against_children,3
+shimoga,2020,crime_against_children,5
+shimoga,2020,cyber_crime,5
+shimoga,2020,crime_against_children,2
+shimoga,2020,crime_against_children,3
+shimoga,2020,crime_against_children,364
+shimoga,2020,violent_crime,2
+shimoga,2020,other_crime,27
+shimoga,2020,other_crime,1
+shimoga,2020,crime_against_children,3
+shimoga,2020,crime_against_children,364
+shimoga,2021,crime_against_women,12
+shimoga,2021,crime_against_women,327
+shimoga,2021,crime_against_women,92
+shimoga,2021,crime_against_women,6
+shimoga,2021,crime_against_women,10
+shimoga,2021,crime_against_women,90
+shimoga,2021,crime_against_women,2
+shimoga,2021,crime_against_women,1
+shimoga,2021,crime_against_women,71
+shimoga,2021,crime_against_children,182
+shimoga,2021,crime_against_women,23
+tumakuru,2020,violent_crime,10
+tumakuru,2020,crime_against_children,2
+tumakuru,2020,cyber_crime,9
+tumakuru,2020,crime_against_children,3
+tumakuru,2020,crime_against_children,4
+tumakuru,2020,crime_against_children,256
+tumakuru,2020,violent_crime,6
+tumakuru,2020,other_crime,164
+tumakuru,2020,crime_against_children,8
+tumakuru,2020,crime_against_children,273
+tumakuru,2020,violent_crime,36
+tumakuru,2021,crime_against_women,284
+tumakuru,2021,crime_against_women,65
+tumakuru,2021,crime_against_women,9
+tumakuru,2021,crime_against_women,4
+tumakuru,2021,crime_against_women,114
+tumakuru,2021,crime_against_women,4
+tumakuru,2021,crime_against_women,2
+tumakuru,2021,crime_against_women,109
+tumakuru,2021,crime_against_children,1
+tumakuru,2021,crime_against_children,101
+tumakuru,2021,crime_against_women,19
+udupi,2020,cyber_crime,10
+udupi,2020,crime_against_children,1
+udupi,2020,violent_crime,2
+udupi,2020,crime_against_children,6
+udupi,2020,crime_against_children,48
+udupi,2020,violent_crime,1
+udupi,2020,other_crime,1
+udupi,2020,crime_against_children,201
+udupi,2021,crime_against_women,4
+udupi,2021,crime_against_women,72
+udupi,2021,crime_against_women,30
+udupi,2021,crime_against_women,14
+udupi,2021,crime_against_women,21
+udupi,2021,crime_against_women,2
+udupi,2021,crime_against_women,4
+udupi,2021,crime_against_women,8
+udupi,2021,crime_against_children,66
+udupi,2021,crime_against_women,10
+uttara kannada,2020,cyber_crime,2
+uttara kannada,2020,crime_against_children,3
+uttara kannada,2020,violent_crime,1
+uttara kannada,2020,crime_against_children,3
+uttara kannada,2020,crime_against_children,128
+uttara kannada,2020,violent_crime,3
+uttara kannada,2020,other_crime,84
+uttara kannada,2020,other_crime,2
+uttara kannada,2020,crime_against_children,1
+uttara kannada,2020,crime_against_children,128
+uttara kannada,2021,crime_against_women,6
+uttara kannada,2021,crime_against_women,160
+uttara kannada,2021,crime_against_women,21
+uttara kannada,2021,crime_against_women,4
+uttara kannada,2021,crime_against_women,1
+uttara kannada,2021,crime_against_women,21
+uttara kannada,2021,crime_against_women,6
+uttara kannada,2021,crime_against_women,5
+uttara kannada,2021,crime_against_women,35
+uttara kannada,2021,crime_against_children,64
+uttara kannada,2021,crime_against_women,11
+vijayanagara,2020,crime_against_children,2
+vijayanagara,2020,crime_against_children,2
+vijayanagara,2020,crime_against_children,1
+vijayanagara,2020,crime_against_children,79
+vijayanagara,2020,other_crime,1
+vijayanagara,2020,crime_against_children,5
+vijayanagara,2020,crime_against_children,124
+vijayanagara,2021,crime_against_women,1
+vijayanagara,2021,crime_against_women,81
+vijayanagara,2021,crime_against_women,57
+vijayanagara,2021,crime_against_women,1
+vijayanagara,2021,crime_against_women,30
+vijayanagara,2021,crime_against_women,1
+vijayanagara,2021,crime_against_women,16
+vijayanagara,2021,crime_against_women,1
+vijayanagara,2021,crime_against_children,62
+vijayanagara,2021,crime_against_women,7
+vijayapura,2020,cyber_crime,9
+vijayapura,2020,crime_against_children,3
+vijayapura,2020,crime_against_children,70
+vijayapura,2020,violent_crime,3
+vijayapura,2020,other_crime,4
+vijayapura,2020,crime_against_children,14
+vijayapura,2020,crime_against_children,106
+vijayapura,2021,crime_against_women,140
+vijayapura,2021,crime_against_women,107
+vijayapura,2021,crime_against_women,9
+vijayapura,2021,crime_against_women,3
+vijayapura,2021,crime_against_women,8
+vijayapura,2021,crime_against_women,1
+vijayapura,2021,crime_against_women,2
+vijayapura,2021,crime_against_women,57
+vijayapura,2021,crime_against_children,4
+vijayapura,2021,crime_against_children,53
+vijayapura,2021,crime_against_women,20
+yadgiri,2020,crime_against_children,1
+yadgiri,2020,cyber_crime,2
+yadgiri,2020,crime_against_children,1
+yadgiri,2020,crime_against_children,43
+yadgiri,2020,violent_crime,1
+yadgiri,2020,other_crime,9
+yadgiri,2020,crime_against_children,3
+yadgiri,2020,crime_against_children,92
+yadgiri,2021,crime_against_women,97
+yadgiri,2021,crime_against_women,32
+yadgiri,2021,crime_against_women,2
+yadgiri,2021,crime_against_women,1
+yadgiri,2021,crime_against_women,20
+yadgiri,2021,crime_against_women,1
+yadgiri,2021,crime_against_women,19
+yadgiri,2021,crime_against_children,46
+yadgiri,2021,crime_against_women,15
+bagalkot,2022,cyber_crime,6
+bagalkot,2022,crime_against_children,10
+bagalkot,2022,crime_against_children,200
+bagalkot,2022,violent_crime,2
+bagalkot,2022,crime_against_children,72
+bagalkot,2022,crime_against_children,242
+bagalkot,2023,crime_against_women,18
+bagalkot,2023,crime_against_women,318
+bagalkot,2023,crime_against_women,68
+bagalkot,2023,crime_against_women,6
+bagalkot,2023,crime_against_women,4
+bagalkot,2023,crime_against_women,58
+bagalkot,2023,crime_against_women,56
+bagalkot,2023,crime_against_children,84
+bagalkot,2023,crime_against_women,24
+ballari,2022,crime_against_children,8
+ballari,2022,cyber_crime,10
+ballari,2022,crime_against_children,2
+ballari,2022,crime_against_children,10
+ballari,2022,crime_against_children,74
+ballari,2022,violent_crime,4
+ballari,2022,other_crime,6
+ballari,2022,crime_against_children,8
+ballari,2022,crime_against_children,164
+ballari,2023,crime_against_women,162
+ballari,2023,crime_against_women,130
+ballari,2023,crime_against_women,4
+ballari,2023,crime_against_women,2
+ballari,2023,crime_against_women,90
+ballari,2023,crime_against_women,2
+ballari,2023,crime_against_women,56
+ballari,2023,crime_against_children,82
+ballari,2023,crime_against_women,18
+belagavi city,2022,crime_against_children,2
+belagavi city,2022,violent_crime,6
+belagavi city,2022,cyber_crime,12
+belagavi city,2022,violent_crime,2
+belagavi city,2022,crime_against_children,136
+belagavi city,2022,violent_crime,8
+belagavi city,2022,other_crime,68
+belagavi city,2022,crime_against_children,112
+belagavi city,2022,violent_crime,6
+belagavi city,2023,crime_against_women,14
+belagavi city,2023,crime_against_women,86
+belagavi city,2023,crime_against_women,176
+belagavi city,2023,crime_against_women,14
+belagavi city,2023,crime_against_women,4
+belagavi city,2023,crime_against_women,4
+belagavi city,2023,crime_against_women,2
+belagavi city,2023,crime_against_women,6
+belagavi city,2023,crime_against_women,2
+belagavi city,2023,crime_against_women,34
+belagavi city,2023,crime_against_children,56
+belagavi city,2023,crime_against_women,12
+belagavi district,2022,cyber_crime,28
+belagavi district,2022,crime_against_children,6
+belagavi district,2022,crime_against_children,166
+belagavi district,2022,violent_crime,14
+belagavi district,2022,other_crime,22
+belagavi district,2022,crime_against_children,38
+belagavi district,2022,crime_against_children,506
+belagavi district,2023,crime_against_women,22
+belagavi district,2023,crime_against_women,552
+belagavi district,2023,crime_against_women,254
+belagavi district,2023,crime_against_women,28
+belagavi district,2023,crime_against_women,6
+belagavi district,2023,crime_against_women,34
+belagavi district,2023,crime_against_women,2
+belagavi district,2023,crime_against_women,148
+belagavi district,2023,crime_against_children,252
+belagavi district,2023,crime_against_women,44
+bengaluru city,2022,crime_against_children,6
+bengaluru city,2022,violent_crime,6
+bengaluru city,2022,crime_against_children,18
+bengaluru city,2022,cyber_crime,272
+bengaluru city,2022,crime_against_children,34
+bengaluru city,2022,violent_crime,6
+bengaluru city,2022,crime_against_children,148
+bengaluru city,2022,crime_against_children,5300
+bengaluru city,2022,violent_crime,18
+bengaluru city,2022,other_crime,114
+bengaluru city,2022,other_crime,4
+bengaluru city,2022,crime_against_children,22
+bengaluru city,2022,crime_against_children,1862
+bengaluru city,2022,violent_crime,10
+bengaluru city,2023,crime_against_women,174
+bengaluru city,2023,violent_crime,10
+bengaluru city,2023,crime_against_women,1514
+bengaluru city,2023,violent_crime,4
+bengaluru city,2023,crime_against_women,1168
+bengaluru city,2023,crime_against_women,146
+bengaluru city,2023,crime_against_women,58
+bengaluru city,2023,crime_against_women,1928
+bengaluru city,2023,crime_against_women,14
+bengaluru city,2023,crime_against_women,310
+bengaluru city,2023,crime_against_women,58
+bengaluru city,2023,crime_against_women,1226
+bengaluru city,2023,crime_against_children,936
+bengaluru city,2023,crime_against_women,302
+bengaluru district,2022,crime_against_children,4
+bengaluru district,2022,cyber_crime,32
+bengaluru district,2022,crime_against_children,4
+bengaluru district,2022,crime_against_children,4
+bengaluru district,2022,crime_against_children,482
+bengaluru district,2022,violent_crime,8
+bengaluru district,2022,other_crime,2
+bengaluru district,2022,crime_against_children,10
+bengaluru district,2022,crime_against_children,412
+bengaluru district,2023,crime_against_women,30
+bengaluru district,2023,crime_against_women,312
+bengaluru district,2023,crime_against_women,298
+bengaluru district,2023,crime_against_women,32
+bengaluru district,2023,crime_against_women,28
+bengaluru district,2023,crime_against_women,68
+bengaluru district,2023,crime_against_women,10
+bengaluru district,2023,crime_against_women,4
+bengaluru district,2023,crime_against_women,388
+bengaluru district,2023,crime_against_children,206
+bengaluru district,2023,crime_against_women,42
+bidar,2022,cyber_crime,14
+bidar,2022,crime_against_children,4
+bidar,2022,violent_crime,2
+bidar,2022,crime_against_children,232
+bidar,2022,violent_crime,12
+bidar,2022,other_crime,72
+bidar,2022,crime_against_children,204
+bidar,2022,violent_crime,4
+bidar,2023,crime_against_women,16
+bidar,2023,crime_against_women,108
+bidar,2023,crime_against_women,2
+bidar,2023,crime_against_women,220
+bidar,2023,crime_against_women,4
+bidar,2023,crime_against_women,8
+bidar,2023,crime_against_women,52
+bidar,2023,crime_against_women,8
+bidar,2023,crime_against_women,2
+bidar,2023,crime_against_women,22
+bidar,2023,crime_against_children,102
+bidar,2023,crime_against_women,22
+chamarajnagar,2022,crime_against_children,4
+chamarajnagar,2022,crime_against_children,2
+chamarajnagar,2022,crime_against_children,42
+chamarajnagar,2022,other_crime,88
+chamarajnagar,2022,crime_against_children,192
+chamarajnagar,2023,crime_against_women,6
+chamarajnagar,2023,crime_against_women,310
+chamarajnagar,2023,crime_against_women,38
+chamarajnagar,2023,crime_against_women,2
+chamarajnagar,2023,crime_against_women,58
+chamarajnagar,2023,crime_against_women,4
+chamarajnagar,2023,crime_against_women,8
+chamarajnagar,2023,crime_against_children,96
+chamarajnagar,2023,crime_against_women,18
+chikkaballapura,2022,crime_against_children,2
+chikkaballapura,2022,violent_crime,4
+chikkaballapura,2022,crime_against_children,4
+chikkaballapura,2022,crime_against_children,2
+chikkaballapura,2022,violent_crime,2
+chikkaballapura,2022,crime_against_children,204
+chikkaballapura,2022,violent_crime,2
+chikkaballapura,2022,other_crime,84
+chikkaballapura,2022,crime_against_children,16
+chikkaballapura,2022,crime_against_children,552
+chikkaballapura,2022,violent_crime,2
+chikkaballapura,2023,crime_against_women,26
+chikkaballapura,2023,crime_against_women,292
+chikkaballapura,2023,crime_against_women,102
+chikkaballapura,2023,crime_against_women,22
+chikkaballapura,2023,crime_against_women,72
+chikkaballapura,2023,crime_against_women,2
+chikkaballapura,2023,crime_against_women,2
+chikkaballapura,2023,crime_against_women,6
+chikkaballapura,2023,crime_against_children,2
+chikkaballapura,2023,crime_against_children,276
+chikkaballapura,2023,crime_against_women,18
+chikkamagaluru,2022,violent_crime,4
+chikkamagaluru,2022,violent_crime,2
+chikkamagaluru,2022,crime_against_children,2
+chikkamagaluru,2022,crime_against_children,152
+chikkamagaluru,2022,violent_crime,2
+chikkamagaluru,2022,other_crime,12
+chikkamagaluru,2022,crime_against_children,12
+chikkamagaluru,2022,crime_against_children,488
+chikkamagaluru,2022,violent_crime,8
+chikkamagaluru,2023,crime_against_women,12
+chikkamagaluru,2023,crime_against_women,446
+chikkamagaluru,2023,crime_against_women,86
+chikkamagaluru,2023,crime_against_women,8
+chikkamagaluru,2023,crime_against_women,80
+chikkamagaluru,2023,crime_against_women,4
+chikkamagaluru,2023,crime_against_women,2
+chikkamagaluru,2023,crime_against_women,2
+chikkamagaluru,2023,crime_against_children,244
+chikkamagaluru,2023,crime_against_women,12
+chitradurga,2022,crime_against_children,18
+chitradurga,2022,crime_against_children,4
+chitradurga,2022,crime_against_children,2
+chitradurga,2022,crime_against_children,492
+chitradurga,2022,violent_crime,4
+chitradurga,2022,other_crime,30
+chitradurga,2022,crime_against_children,4
+chitradurga,2022,crime_against_children,384
+chitradurga,2023,crime_against_women,26
+chitradurga,2023,crime_against_women,766
+chitradurga,2023,crime_against_women,144
+chitradurga,2023,crime_against_women,2
+chitradurga,2023,crime_against_women,14
+chitradurga,2023,crime_against_women,94
+chitradurga,2023,crime_against_women,2
+chitradurga,2023,crime_against_women,8
+chitradurga,2023,crime_against_women,10
+chitradurga,2023,crime_against_children,192
+chitradurga,2023,crime_against_women,24
+dakshina kannada,2022,crime_against_children,2
+dakshina kannada,2022,cyber_crime,24
+dakshina kannada,2022,crime_against_children,10
+dakshina kannada,2022,crime_against_children,68
+dakshina kannada,2022,violent_crime,2
+dakshina kannada,2022,other_crime,126
+dakshina kannada,2022,crime_against_children,380
+dakshina kannada,2023,crime_against_women,4
+dakshina kannada,2023,crime_against_women,114
+dakshina kannada,2023,crime_against_women,62
+dakshina kannada,2023,crime_against_women,12
+dakshina kannada,2023,crime_against_women,8
+dakshina kannada,2023,crime_against_women,4
+dakshina kannada,2023,crime_against_women,24
+dakshina kannada,2023,crime_against_children,130
+dakshina kannada,2023,crime_against_women,20
+davanagere,2022,crime_against_children,8
+davanagere,2022,cyber_crime,6
+davanagere,2022,crime_against_children,10
+davanagere,2022,crime_against_children,6
+davanagere,2022,crime_against_children,708
+davanagere,2022,violent_crime,2
+davanagere,2022,other_crime,6
+davanagere,2022,other_crime,2
+davanagere,2022,crime_against_children,12
+davanagere,2022,crime_against_children,376
+davanagere,2023,crime_against_women,18
+davanagere,2023,crime_against_women,436
+davanagere,2023,crime_against_women,2
+davanagere,2023,crime_against_women,118
+davanagere,2023,crime_against_women,6
+davanagere,2023,crime_against_women,14
+davanagere,2023,crime_against_women,186
+davanagere,2023,crime_against_women,2
+davanagere,2023,crime_against_women,2
+davanagere,2023,crime_against_women,138
+davanagere,2023,crime_against_women,4
+davanagere,2023,crime_against_children,188
+davanagere,2023,crime_against_women,34
+dharwad,2022,cyber_crime,2
+dharwad,2022,crime_against_children,8
+dharwad,2022,crime_against_children,36
+dharwad,2022,other_crime,32
+dharwad,2022,other_crime,2
+dharwad,2022,crime_against_children,12
+dharwad,2022,crime_against_children,132
+dharwad,2023,crime_against_women,2
+dharwad,2023,crime_against_women,94
+dharwad,2023,crime_against_women,2
+dharwad,2023,crime_against_women,84
+dharwad,2023,crime_against_women,2
+dharwad,2023,crime_against_women,10
+dharwad,2023,crime_against_children,66
+dharwad,2023,crime_against_women,6
+gadag,2022,cyber_crime,6
+gadag,2022,crime_against_children,4
+gadag,2022,crime_against_children,84
+gadag,2022,violent_crime,2
+gadag,2022,other_crime,10
+gadag,2022,crime_against_children,10
+gadag,2022,crime_against_children,202
+gadag,2023,crime_against_women,8
+gadag,2023,crime_against_women,112
+gadag,2023,crime_against_women,46
+gadag,2023,crime_against_women,6
+gadag,2023,crime_against_women,4
+gadag,2023,crime_against_women,10
+gadag,2023,crime_against_women,2
+gadag,2023,crime_against_women,2
+gadag,2023,crime_against_women,2
+gadag,2023,crime_against_children,68
+gadag,2023,crime_against_women,14
+hassan,2022,cyber_crime,8
+hassan,2022,crime_against_children,2
+hassan,2022,crime_against_children,2
+hassan,2022,crime_against_children,272
+hassan,2022,other_crime,30
+hassan,2022,other_crime,6
+hassan,2022,crime_against_children,26
+hassan,2022,crime_against_children,608
+hassan,2023,crime_against_women,18
+hassan,2023,crime_against_women,546
+hassan,2023,crime_against_women,100
+hassan,2023,crime_against_women,8
+hassan,2023,crime_against_women,10
+hassan,2023,crime_against_women,156
+hassan,2023,crime_against_women,132
+hassan,2023,crime_against_children,304
+hassan,2023,crime_against_women,26
+haveri,2022,crime_against_children,2
+haveri,2022,crime_against_children,4
+haveri,2022,crime_against_children,126
+haveri,2022,other_crime,2
+haveri,2022,crime_against_children,2
+haveri,2022,crime_against_children,312
+haveri,2023,crime_against_women,12
+haveri,2023,crime_against_women,224
+haveri,2023,crime_against_women,72
+haveri,2023,crime_against_women,8
+haveri,2023,crime_against_women,62
+haveri,2023,crime_against_women,116
+haveri,2023,crime_against_children,156
+haveri,2023,crime_against_women,26
+hubballi dharwad city,2022,crime_against_children,2
+hubballi dharwad city,2022,cyber_crime,20
+hubballi dharwad city,2022,crime_against_children,8
+hubballi dharwad city,2022,crime_against_children,120
+hubballi dharwad city,2022,crime_against_children,4
+hubballi dharwad city,2022,crime_against_children,156
+hubballi dharwad city,2023,crime_against_women,8
+hubballi dharwad city,2023,crime_against_women,110
+hubballi dharwad city,2023,crime_against_women,174
+hubballi dharwad city,2023,crime_against_women,18
+hubballi dharwad city,2023,crime_against_women,4
+hubballi dharwad city,2023,crime_against_women,12
+hubballi dharwad city,2023,crime_against_women,10
+hubballi dharwad city,2023,crime_against_children,78
+hubballi dharwad city,2023,crime_against_women,20
+k.g.f.,2022,crime_against_children,4
+k.g.f.,2022,cyber_crime,16
+k.g.f.,2022,crime_against_children,2
+k.g.f.,2022,crime_against_children,34
+k.g.f.,2022,violent_crime,2
+k.g.f.,2022,crime_against_children,2
+k.g.f.,2022,crime_against_children,120
+k.g.f.,2023,crime_against_women,6
+k.g.f.,2023,crime_against_women,78
+k.g.f.,2023,crime_against_women,26
+k.g.f.,2023,crime_against_women,8
+k.g.f.,2023,crime_against_women,2
+k.g.f.,2023,crime_against_women,34
+k.g.f.,2023,crime_against_women,16
+k.g.f.,2023,crime_against_children,60
+k.g.f.,2023,crime_against_women,10
+k.railways,2022,crime_against_children,2
+k.railways,2022,crime_against_children,4
+k.railways,2022,crime_against_children,14
+k.railways,2022,crime_against_children,4
+k.railways,2023,crime_against_women,6
+k.railways,2023,crime_against_women,6
+k.railways,2023,crime_against_women,2
+k.railways,2023,crime_against_children,4
+kalaburgi,2022,crime_against_children,4
+kalaburgi,2022,crime_against_women,2
+kalaburgi,2022,violent_crime,2
+kalaburgi,2022,crime_against_children,4
+kalaburgi,2022,cyber_crime,12
+kalaburgi,2022,crime_against_children,6
+kalaburgi,2022,crime_against_children,2
+kalaburgi,2022,crime_against_children,194
+kalaburgi,2022,violent_crime,20
+kalaburgi,2022,other_crime,42
+kalaburgi,2022,crime_against_children,8
+kalaburgi,2022,crime_against_children,212
+kalaburgi,2023,crime_against_women,20
+kalaburgi,2023,crime_against_women,234
+kalaburgi,2023,crime_against_women,202
+kalaburgi,2023,crime_against_women,2
+kalaburgi,2023,crime_against_women,6
+kalaburgi,2023,crime_against_women,6
+kalaburgi,2023,crime_against_women,2
+kalaburgi,2023,crime_against_women,58
+kalaburgi,2023,crime_against_children,2
+kalaburgi,2023,crime_against_women,2
+kalaburgi,2023,crime_against_children,110
+kalaburgi,2023,crime_against_women,24
+kalaburgi city,2022,cyber_crime,8
+kalaburgi city,2022,crime_against_children,12
+kalaburgi city,2022,crime_against_children,266
+kalaburgi city,2022,violent_crime,6
+kalaburgi city,2022,other_crime,16
+kalaburgi city,2022,crime_against_children,8
+kalaburgi city,2022,crime_against_children,72
+kalaburgi city,2023,crime_against_women,8
+kalaburgi city,2023,crime_against_women,82
+kalaburgi city,2023,crime_against_women,2
+kalaburgi city,2023,crime_against_women,106
+kalaburgi city,2023,crime_against_women,6
+kalaburgi city,2023,crime_against_women,100
+kalaburgi city,2023,crime_against_women,6
+kalaburgi city,2023,crime_against_women,2
+kalaburgi city,2023,crime_against_children,10
+kalaburgi city,2023,crime_against_women,2
+kalaburgi city,2023,crime_against_children,34
+kalaburgi city,2023,crime_against_women,14
+kodagu,2022,violent_crime,2
+kodagu,2022,cyber_crime,2
+kodagu,2022,crime_against_children,4
+kodagu,2022,crime_against_children,132
+kodagu,2022,other_crime,36
+kodagu,2022,crime_against_children,4
+kodagu,2022,crime_against_children,264
+kodagu,2022,violent_crime,12
+kodagu,2023,crime_against_women,6
+kodagu,2023,crime_against_women,106
+kodagu,2023,crime_against_women,48
+kodagu,2023,crime_against_women,4
+kodagu,2023,crime_against_women,4
+kodagu,2023,crime_against_women,2
+kodagu,2023,crime_against_women,54
+kodagu,2023,crime_against_children,132
+kodagu,2023,crime_against_women,16
+kolar,2022,cyber_crime,6
+kolar,2022,crime_against_children,4
+kolar,2022,crime_against_children,124
+kolar,2022,violent_crime,6
+kolar,2022,other_crime,12
+kolar,2022,other_crime,4
+kolar,2022,crime_against_children,10
+kolar,2022,crime_against_children,276
+kolar,2023,crime_against_women,2
+kolar,2023,crime_against_women,258
+kolar,2023,crime_against_women,46
+kolar,2023,crime_against_women,6
+kolar,2023,crime_against_women,14
+kolar,2023,crime_against_women,72
+kolar,2023,crime_against_women,2
+kolar,2023,crime_against_women,104
+kolar,2023,crime_against_children,138
+kolar,2023,crime_against_women,24
+koppal,2022,cyber_crime,8
+koppal,2022,crime_against_children,8
+koppal,2022,crime_against_children,80
+koppal,2022,violent_crime,2
+koppal,2022,other_crime,56
+koppal,2022,crime_against_children,8
+koppal,2022,crime_against_children,284
+koppal,2023,crime_against_women,4
+koppal,2023,crime_against_women,218
+koppal,2023,crime_against_women,192
+koppal,2023,crime_against_women,8
+koppal,2023,crime_against_women,8
+koppal,2023,crime_against_women,2
+koppal,2023,crime_against_women,2
+koppal,2023,crime_against_women,4
+koppal,2023,crime_against_women,62
+koppal,2023,crime_against_children,2
+koppal,2023,crime_against_children,142
+koppal,2023,crime_against_women,16
+mandya,2022,crime_against_children,2
+mandya,2022,crime_against_children,8
+mandya,2022,crime_against_children,2
+mandya,2022,crime_against_children,456
+mandya,2022,violent_crime,20
+mandya,2022,other_crime,82
+mandya,2022,crime_against_children,20
+mandya,2022,crime_against_children,394
+mandya,2023,crime_against_women,22
+mandya,2023,crime_against_women,684
+mandya,2023,crime_against_women,184
+mandya,2023,crime_against_women,10
+mandya,2023,crime_against_women,78
+mandya,2023,crime_against_women,6
+mandya,2023,crime_against_women,2
+mandya,2023,crime_against_women,4
+mandya,2023,crime_against_women,10
+mandya,2023,crime_against_women,2
+mandya,2023,crime_against_children,198
+mandya,2023,crime_against_women,20
+mangaluru city,2022,cyber_crime,44
+mangaluru city,2022,crime_against_children,2
+mangaluru city,2022,crime_against_children,6
+mangaluru city,2022,crime_against_children,120
+mangaluru city,2022,violent_crime,2
+mangaluru city,2022,other_crime,72
+mangaluru city,2022,crime_against_children,268
+mangaluru city,2023,crime_against_women,8
+mangaluru city,2023,crime_against_women,166
+mangaluru city,2023,crime_against_women,64
+mangaluru city,2023,crime_against_women,16
+mangaluru city,2023,crime_against_women,6
+mangaluru city,2023,crime_against_women,34
+mangaluru city,2023,crime_against_women,6
+mangaluru city,2023,crime_against_women,4
+mangaluru city,2023,crime_against_women,8
+mangaluru city,2023,crime_against_women,4
+mangaluru city,2023,crime_against_children,134
+mangaluru city,2023,crime_against_women,24
+mysuru city,2022,crime_against_children,8
+mysuru city,2022,cyber_crime,10
+mysuru city,2022,crime_against_children,10
+mysuru city,2022,crime_against_children,248
+mysuru city,2022,violent_crime,2
+mysuru city,2022,crime_against_children,6
+mysuru city,2022,crime_against_children,262
+mysuru city,2022,violent_crime,2
+mysuru city,2023,crime_against_women,14
+mysuru city,2023,crime_against_women,162
+mysuru city,2023,crime_against_women,86
+mysuru city,2023,crime_against_women,10
+mysuru city,2023,crime_against_women,6
+mysuru city,2023,crime_against_women,238
+mysuru city,2023,crime_against_women,6
+mysuru city,2023,crime_against_women,90
+mysuru city,2023,crime_against_children,108
+mysuru city,2023,crime_against_women,30
+mysuru district,2022,crime_against_children,4
+mysuru district,2022,cyber_crime,14
+mysuru district,2022,crime_against_children,2
+mysuru district,2022,crime_against_children,2
+mysuru district,2022,crime_against_children,2
+mysuru district,2022,crime_against_children,490
+mysuru district,2022,violent_crime,8
+mysuru district,2022,other_crime,128
+mysuru district,2022,crime_against_children,18
+mysuru district,2022,crime_against_children,540
+mysuru district,2023,crime_against_women,12
+mysuru district,2023,crime_against_women,568
+mysuru district,2023,crime_against_women,194
+mysuru district,2023,crime_against_women,18
+mysuru district,2023,crime_against_women,16
+mysuru district,2023,crime_against_women,46
+mysuru district,2023,crime_against_women,14
+mysuru district,2023,crime_against_women,8
+mysuru district,2023,crime_against_women,2
+mysuru district,2023,crime_against_children,270
+mysuru district,2023,crime_against_women,44
+raichur,2022,crime_against_children,12
+raichur,2022,cyber_crime,12
+raichur,2022,crime_against_children,2
+raichur,2022,crime_against_children,4
+raichur,2022,crime_against_children,136
+raichur,2022,violent_crime,6
+raichur,2022,other_crime,72
+raichur,2022,crime_against_children,2
+raichur,2022,crime_against_children,208
+raichur,2023,crime_against_women,14
+raichur,2023,crime_against_women,434
+raichur,2023,crime_against_women,230
+raichur,2023,crime_against_women,12
+raichur,2023,crime_against_women,12
+raichur,2023,crime_against_women,120
+raichur,2023,crime_against_women,6
+raichur,2023,crime_against_women,50
+raichur,2023,crime_against_children,104
+raichur,2023,crime_against_women,48
+ramanagara,2022,crime_against_children,10
+ramanagara,2022,cyber_crime,10
+ramanagara,2022,crime_against_children,2
+ramanagara,2022,crime_against_children,2
+ramanagara,2022,crime_against_children,472
+ramanagara,2022,violent_crime,4
+ramanagara,2022,other_crime,2
+ramanagara,2022,crime_against_children,28
+ramanagara,2022,crime_against_children,368
+ramanagara,2023,crime_against_women,582
+ramanagara,2023,crime_against_women,92
+ramanagara,2023,crime_against_women,10
+ramanagara,2023,crime_against_women,8
+ramanagara,2023,crime_against_women,136
+ramanagara,2023,crime_against_women,4
+ramanagara,2023,crime_against_women,2
+ramanagara,2023,crime_against_women,164
+ramanagara,2023,crime_against_children,184
+ramanagara,2023,crime_against_women,28
+shimoga,2022,crime_against_children,6
+shimoga,2022,crime_against_children,10
+shimoga,2022,cyber_crime,10
+shimoga,2022,crime_against_children,4
+shimoga,2022,crime_against_children,6
+shimoga,2022,crime_against_children,728
+shimoga,2022,violent_crime,4
+shimoga,2022,other_crime,54
+shimoga,2022,other_crime,2
+shimoga,2022,crime_against_children,6
+shimoga,2022,crime_against_children,728
+shimoga,2023,crime_against_women,24
+shimoga,2023,crime_against_women,654
+shimoga,2023,crime_against_women,184
+shimoga,2023,crime_against_women,12
+shimoga,2023,crime_against_women,20
+shimoga,2023,crime_against_women,180
+shimoga,2023,crime_against_women,4
+shimoga,2023,crime_against_women,2
+shimoga,2023,crime_against_women,142
+shimoga,2023,crime_against_children,364
+shimoga,2023,crime_against_women,46
+tumakuru,2022,violent_crime,20
+tumakuru,2022,crime_against_children,4
+tumakuru,2022,cyber_crime,18
+tumakuru,2022,crime_against_children,6
+tumakuru,2022,crime_against_children,8
+tumakuru,2022,crime_against_children,512
+tumakuru,2022,violent_crime,12
+tumakuru,2022,other_crime,328
+tumakuru,2022,crime_against_children,16
+tumakuru,2022,crime_against_children,546
+tumakuru,2022,violent_crime,72
+tumakuru,2023,crime_against_women,568
+tumakuru,2023,crime_against_women,130
+tumakuru,2023,crime_against_women,18
+tumakuru,2023,crime_against_women,8
+tumakuru,2023,crime_against_women,228
+tumakuru,2023,crime_against_women,8
+tumakuru,2023,crime_against_women,4
+tumakuru,2023,crime_against_women,218
+tumakuru,2023,crime_against_children,2
+tumakuru,2023,crime_against_children,202
+tumakuru,2023,crime_against_women,38
+udupi,2022,cyber_crime,20
+udupi,2022,crime_against_children,2
+udupi,2022,violent_crime,4
+udupi,2022,crime_against_children,12
+udupi,2022,crime_against_children,96
+udupi,2022,violent_crime,2
+udupi,2022,other_crime,2
+udupi,2022,crime_against_children,402
+udupi,2023,crime_against_women,8
+udupi,2023,crime_against_women,144
+udupi,2023,crime_against_women,60
+udupi,2023,crime_against_women,28
+udupi,2023,crime_against_women,42
+udupi,2023,crime_against_women,4
+udupi,2023,crime_against_women,8
+udupi,2023,crime_against_women,16
+udupi,2023,crime_against_children,132
+udupi,2023,crime_against_women,20
+uttara kannada,2022,cyber_crime,4
+uttara kannada,2022,crime_against_children,6
+uttara kannada,2022,violent_crime,2
+uttara kannada,2022,crime_against_children,6
+uttara kannada,2022,crime_against_children,256
+uttara kannada,2022,violent_crime,6
+uttara kannada,2022,other_crime,168
+uttara kannada,2022,other_crime,4
+uttara kannada,2022,crime_against_children,2
+uttara kannada,2022,crime_against_children,256
+uttara kannada,2023,crime_against_women,12
+uttara kannada,2023,crime_against_women,320
+uttara kannada,2023,crime_against_women,42
+uttara kannada,2023,crime_against_women,8
+uttara kannada,2023,crime_against_women,2
+uttara kannada,2023,crime_against_women,42
+uttara kannada,2023,crime_against_women,12
+uttara kannada,2023,crime_against_women,10
+uttara kannada,2023,crime_against_women,70
+uttara kannada,2023,crime_against_children,128
+uttara kannada,2023,crime_against_women,22
+vijayanagara,2022,crime_against_children,4
+vijayanagara,2022,crime_against_children,4
+vijayanagara,2022,crime_against_children,2
+vijayanagara,2022,crime_against_children,158
+vijayanagara,2022,other_crime,2
+vijayanagara,2022,crime_against_children,10
+vijayanagara,2022,crime_against_children,248
+vijayanagara,2023,crime_against_women,2
+vijayanagara,2023,crime_against_women,162
+vijayanagara,2023,crime_against_women,114
+vijayanagara,2023,crime_against_women,2
+vijayanagara,2023,crime_against_women,60
+vijayanagara,2023,crime_against_women,2
+vijayanagara,2023,crime_against_women,32
+vijayanagara,2023,crime_against_women,2
+vijayanagara,2023,crime_against_children,124
+vijayanagara,2023,crime_against_women,14
+vijayapura,2022,cyber_crime,18
+vijayapura,2022,crime_against_children,6
+vijayapura,2022,crime_against_children,140
+vijayapura,2022,violent_crime,6
+vijayapura,2022,other_crime,8
+vijayapura,2022,crime_against_children,28
+vijayapura,2022,crime_against_children,212
+vijayapura,2023,crime_against_women,280
+vijayapura,2023,crime_against_women,214
+vijayapura,2023,crime_against_women,18
+vijayapura,2023,crime_against_women,6
+vijayapura,2023,crime_against_women,16
+vijayapura,2023,crime_against_women,2
+vijayapura,2023,crime_against_women,4
+vijayapura,2023,crime_against_women,114
+vijayapura,2023,crime_against_children,8
+vijayapura,2023,crime_against_children,106
+vijayapura,2023,crime_against_women,40
+yadgiri,2022,crime_against_children,2
+yadgiri,2022,cyber_crime,4
+yadgiri,2022,crime_against_children,2
+yadgiri,2022,crime_against_children,86
+yadgiri,2022,violent_crime,2
+yadgiri,2022,other_crime,18
+yadgiri,2022,crime_against_children,6
+yadgiri,2022,crime_against_children,184
+yadgiri,2023,crime_against_women,194
+yadgiri,2023,crime_against_women,64
+yadgiri,2023,crime_against_women,4
+yadgiri,2023,crime_against_women,2
+yadgiri,2023,crime_against_women,40
+yadgiri,2023,crime_against_women,2
+yadgiri,2023,crime_against_women,38
+yadgiri,2023,crime_against_children,92
+yadgiri,2023,crime_against_women,30
