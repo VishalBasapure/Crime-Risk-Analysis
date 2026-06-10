@@ -27,7 +27,7 @@ attr = 'Esri'
 # ─────────────────────────────────────────────────────────────
 
 print("Loading data...")
-df = pd.read_csv('bengaluru_master.csv')
+df = pd.read_csv('../data/processed/bengaluru_master.csv')
 print(f"  {len(df):,} rows loaded")
 print(f"  Crime types:\n{df['crime_type'].value_counts().to_string()}")
 print()
@@ -183,7 +183,7 @@ m.get_root().html.add_child(folium.Element(title_html))
 #  STEP 10 —  SAVE
 # ─────────────────────────────────────────────────────────────
 
-output_file = f"bengaluru_hotspot_{CRIME_FILTER.replace(' ', '_')}.html"
+output_file = f"../outputs-maps/bengaluru_hotspot_{CRIME_FILTER.replace(' ', '_')}.html"
 m.save(output_file)
 
 print()

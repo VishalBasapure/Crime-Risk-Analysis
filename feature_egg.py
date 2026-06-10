@@ -8,9 +8,9 @@ from sklearn.metrics import mean_absolute_error, r2_score
 import joblib
 import json
 try:
-    df = pd.read_csv("karnataka_categorised.csv")
+    df = pd.read_csv("data/processed/karnataka_categorised.csv")
 except FileNotFoundError:
-    print("Error: karnataka_categorised.csv not found.")
+    print("Error: data/processed/karnataka_categorised.csv not found.")
     exit(1)
 df = df.groupby(['district', 'year', 'crime_category'], as_index=False)['count'].sum()
 df_pivot = df.pivot_table(
@@ -70,7 +70,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 print("X_train:", X_train.shape)
 print("y_train:", y_train.shape)
 
-df_pivot.to_csv('karnataka_dataset.csv', index=False)
+df_pivot.to_csv('data/processed/karnataka_dataset.csv', index=False)
 
 
 
@@ -80,8 +80,8 @@ df_pivot.to_csv('karnataka_dataset.csv', index=False)
 
 # ─── LOAD ──────────────────────────────────────────────────
 try:
-    df  = pd.read_csv('karnataka_filled_v2.csv')
-    df2 = pd.read_csv('karnataka_categorised_final.csv')
+    df  = pd.read_csv('data/raw/karnataka_filled_v2.csv')
+    df2 = pd.read_csv('data/processed/karnataka_categorised_final.csv')
 except FileNotFoundError as e:
     print(f"Error: {e}")
     exit(1)
@@ -200,7 +200,7 @@ print(f"  Accuracy : {accuracy:.2f}%")
 print()
 
 # Save metrics for the dashboard
-with open('dcvi_metrics.json', 'w', encoding='utf-8') as f:
+with open('data/output_data/dcvi_metrics.json', 'w', encoding='utf-8') as f:
     json.dump({'r2': float(r2), 'mae': float(mae)}, f)
 
 # Feature importance
@@ -244,11 +244,11 @@ print()
 print("Risk distribution:", pred_2024['risk_2024'].value_counts().to_dict())
 
 # ─── SAVE ALL OUTPUTS ──────────────────────────────────────
-output.to_csv('dcvi_2024_predictions.csv', index=False)
-joblib.dump(rf,    'dcvi_model.pkl')
-joblib.dump({'vol': sc_vol, 'wc': sc_wc, 'tr': sc_tr, 'var': sc_var}, 'dcvi_scalers.pkl')
-joblib.dump(dist_map, 'district_map.pkl')
-df.to_csv('karnataka_model_ready.csv', index=False)
+output.to_csv('data/output_data/dcvi_2024_predictions.csv', index=False)
+joblib.dump(rf,    'models/dcvi_model.pkl')
+joblib.dump({'vol': sc_vol, 'wc': sc_wc, 'tr': sc_tr, 'var': sc_var}, 'models/dcvi_scalers.pkl')
+joblib.dump(dist_map, 'models/district_map.pkl')
+df.to_csv('data/processed/karnataka_model_ready.csv', index=False)
 
 print("\nFiles saved:")
 print("  dcvi_model.pkl           — trained Random Forest")

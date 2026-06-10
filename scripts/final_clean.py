@@ -1,6 +1,6 @@
 
 import pandas as pd
-df = pd.read_csv('final_karnataka_crime.csv')
+df = pd.read_csv('../data/processed/final_karnataka_crime.csv')
 
 print("=== BEFORE CLEANING ===")
 print(f"  Rows        : {len(df)}")
@@ -86,6 +86,6 @@ print()
 #reorder columns for better readability
 df = df[['district', 'year', 'crime_type', 'crime_category', 'count']]
 
-df.to_csv('karnataka_categorised.csv', index=False)
-print(f"\nSaved → karnataka_categorised.csv ({len(df)} rows, {df.shape[1]} columns)")
+df.to_csv('../data/processed/karnataka_categorised.csv', index=False)
+print(f"\nSaved → ../data/processed/karnataka_categorised.csv ({len(df)} rows, {df.shape[1]} columns)")
 print("Columns:", list(df.columns))

@@ -4,7 +4,7 @@ import numpy as np
 
 np.random.seed(2024)   # reproducible, year-based seed
 
-df = pd.read_csv('karnataka_dataset.csv')
+df = pd.read_csv('../data/processed/karnataka_dataset.csv')
 
 print("=== BEFORE FILL ===")
 print(f"Rows where crime_against_women == 0 : {(df['crime_against_women']==0).sum()}")
@@ -120,8 +120,8 @@ for dist_id, dist_name in [(0,'bagalkot'), (4,'bengaluru city'), (10,'chitradurg
 
 
 # ── Save ──────────────────────────────────────────────────
-df_filled.to_csv('karnataka_filled_v2.csv', index=False)
-print(f"\nSaved → karnataka_filled_v2.csv  ({len(df_filled)} rows)")
+df_filled.to_csv('../data/raw/karnataka_filled_v2.csv', index=False)
+print(f"\nSaved → ../data/raw/karnataka_filled_v2.csv  ({len(df_filled)} rows)")
 print("Columns:", list(df_filled.columns))
 print()
 print("=== KNOWN LIMITATIONS — document these in your report ===")

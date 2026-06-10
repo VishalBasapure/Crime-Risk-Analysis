@@ -20,7 +20,7 @@ import numpy as np
 #  STEP 1 — LOAD BOTH FILES
 # ─────────────────────────────────────────────────────────────
 
-df_map = pd.read_csv('crime_map_data.csv')
+df_map = pd.read_csv('../data/output_data/crime_map_data.csv')
 df_raw = pd.read_csv('south_crime_raw_CLEAN.csv')
 
 print("=== LOADED FILES ===")
@@ -229,9 +229,9 @@ print()
 #  STEP 7 — SAVE
 # ─────────────────────────────────────────────────────────────
 
-df_merged.to_csv('bengaluru_master.csv', index=False)
+df_merged.to_csv('../data/processed/bengaluru_master.csv', index=False)
 
-print(f"Saved  →  bengaluru_master.csv  ({len(df_merged)} rows)")
+print(f"Saved  →  ../data/processed/bengaluru_master.csv  ({len(df_merged)} rows)")
 print()
-print("Feed bengaluru_master.csv into your KDE hotspot script.")
+print("Feed ../data/processed/bengaluru_master.csv into your KDE hotspot script.")
 print("Change CRIME_FILTER in the hotspot script to map any crime type.")

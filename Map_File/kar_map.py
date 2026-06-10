@@ -4,7 +4,7 @@ import numpy as np
 import folium
 from folium.plugins import HeatMap
 
-df = pd.read_csv("dcvi_2024_predictions.csv")
+df = pd.read_csv("../data/output_data/dcvi_2024_predictions.csv")
 
 # ── Fix 1: Risk bins — percentile-based so distribution is balanced ──
 # Old bins=[0,70,80,100] put almost everything in LOW (meaningless)
@@ -172,7 +172,7 @@ Click any circle for details</small>
 </div>"""
 m.get_root().html.add_child(folium.Element(legend_html))
 
-m.save("karnataka1_crime_2024_fixed.html")   
-print(f"\nMap saved: karnataka_crime_2024_fixed.html")
+m.save("../outputs-maps/karnataka1_crime_2024_fixed.html")   
+print(f"\nMap saved: ../outputs-maps/karnataka_crime_2024_fixed.html")
 print(f"Heat points plotted: {len(heat_data)}")
 print("Open in Chrome or Firefox — works offline.")

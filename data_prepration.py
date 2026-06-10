@@ -1,6 +1,6 @@
 import pandas as pd
 #feature selection and pivoting
-df = pd.read_csv("karnataka_categorised.csv")
+df = pd.read_csv("data/processed/karnataka_categorised.csv")
 df = df.groupby(['district', 'year', 'crime_category'], as_index=False)['count'].sum()
 df_pivot = df.pivot_table(
     index=['district', 'year'],
@@ -61,7 +61,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 print("X_train:", X_train.shape)
 print("y_train:", y_train.shape)
 
-df_pivot.to_csv('karnataka_dataset.csv', index=False)
+df_pivot.to_csv('data/processed/karnataka_dataset.csv', index=False)
 
 
 

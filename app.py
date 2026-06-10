@@ -9,13 +9,13 @@
 #  Run:
 #    streamlit run app.py
 #
-#  Files needed in same folder:
-#    dcvi_2024_predictions.csv
-#    karnataka_model_ready.csv
-#    dcvi_model.pkl
-#    dcvi_scalers.pkl
-#    district_map.pkl
-#    karnataka_crime_2024_fixed.html   (run kar_map_fixed.py first)
+#  Files needed:
+#    data/output_data/dcvi_2024_predictions.csv
+#    data/processed/karnataka_model_ready.csv
+#    models/dcvi_model.pkl
+#    models/dcvi_scalers.pkl
+#    models/district_map.pkl
+#    outputs-maps/karnataka_crime_2024_fixed.html   (run kar_map.py first)
 # ============================================================
 
 import streamlit as st
@@ -138,8 +138,8 @@ h3 { font-size: 1.9rem !important; }
 
 @st.cache_data
 def load_data():
-    pred     = pd.read_csv("dcvi_2024_predictions.csv")
-    model_df = pd.read_csv("karnataka_model_ready.csv")
+    pred     = pd.read_csv("data/output_data/dcvi_2024_predictions.csv")
+    model_df = pd.read_csv("data/processed/karnataka_model_ready.csv")
     dist_names   = sorted(pred['district'].unique())
     dist_num_map = dict(enumerate(dist_names))
 
@@ -170,10 +170,10 @@ def load_data():
 
 def load_metrics():
     default = {'r2': 0.776, 'mae': 205}
-    if not os.path.exists('dcvi_metrics.json'):
+    if not os.path.exists('data/output_data/dcvi_metrics.json'):
         return default
     try:
-        with open('dcvi_metrics.json', 'r', encoding='utf-8') as f:
+        with open('data/output_data/dcvi_metrics.json', 'r', encoding='utf-8') as f:
             metrics = json.load(f)
         return {
             'r2': float(metrics.get('r2', default['r2'])),
@@ -401,12 +401,12 @@ elif page == "🗺️  Bengaluru Hotspot Map":
 
     # Try all filenames the user might have created
     possible = [
-        "bengaluru_hotspot_all.html",
-        "bengaluru_hotspot_murder.html",
-        "karnataka_crime_2024_fixed.html",
-        "karnataka_crime_2024.html",
-        "final_crime_heatmap.html",
-        "bengaluru_hotspot_all_crimes.html",
+        "outputs-maps/bengaluru_hotspot_all.html",
+        "outputs-maps/bengaluru_hotspot_murder.html",
+        "outputs-maps/karnataka_crime_2024_fixed.html",
+        "outputs-maps/karnataka_crime_2024.html",
+        "outputs-maps/final_crime_heatmap.html",
+        "outputs-maps/bengaluru_hotspot_all_crimes.html",
     ]
 
     html_file = next((f for f in possible if os.path.exists(f)), None)
