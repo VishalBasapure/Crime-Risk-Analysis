@@ -1,39 +1,39 @@
 district,dcvi_score,risk,pred_crimes_2024,actual_2023
-bengaluru city,88.0,HIGH,5317.0,7848
-shimoga,83.6,HIGH,1584.0,1632
-belagavi district,81.9,HIGH,1411.0,1342
-dakshina kannada,80.5,HIGH,524.0,378
-raichur,80.1,HIGH,1049.0,1030
-dharwad,79.9,MEDIUM,290.0,266
-davanagere,78.5,MEDIUM,1197.0,1148
-ramanagara,78.3,MEDIUM,1318.0,1210
-koppal,78.2,MEDIUM,652.0,660
-chikkamagaluru,77.2,MEDIUM,989.0,896
-vijayapura,74.4,MEDIUM,898.0,808
-haveri,74.3,MEDIUM,669.0,676
-chikkaballapura,73.8,MEDIUM,874.0,820
-kalaburgi city,73.6,MEDIUM,464.0,372
-mysuru district,73.4,MEDIUM,1207.0,1192
-bidar,73.4,MEDIUM,659.0,566
-kodagu,73.0,MEDIUM,453.0,372
-mandya,73.0,MEDIUM,1352.0,1220
-ballari,72.4,MEDIUM,555.0,546
-hubballi dharwad city,72.2,MEDIUM,466.0,434
-kalaburgi,72.1,MEDIUM,719.0,668
-udupi,71.9,MEDIUM,647.0,462
-kolar,71.6,MEDIUM,660.0,666
-tumakuru,70.6,MEDIUM,1469.0,1424
-hassan,70.0,LOW,1368.0,1300
-uttara kannada,69.6,LOW,771.0,668
-k.g.f.,69.0,LOW,277.0,240
-mangaluru city,68.8,LOW,568.0,474
-bagalkot,68.2,LOW,748.0,636
-mysuru city,67.8,LOW,904.0,750
-chamarajnagar,67.3,LOW,587.0,540
-gadag,67.3,LOW,342.0,274
-k.railways,66.7,LOW,220.0,18
-chitradurga,66.7,LOW,1361.0,1282
-yadgiri,66.3,LOW,508.0,466
-bengaluru district,66.0,LOW,1433.0,1418
-belagavi city,65.4,LOW,470.0,410
-vijayanagara,63.4,LOW,603.0,514
+bengaluru city,91.9,HIGH,6666.0,7848
+shimoga,83.9,HIGH,1716.0,1632
+belagavi district,82.3,HIGH,1539.0,1342
+dakshina kannada,80.9,HIGH,656.0,378
+dharwad,80.1,HIGH,338.0,266
+raichur,80.0,MEDIUM,985.0,1030
+davanagere,78.7,MEDIUM,1246.0,1148
+ramanagara,78.5,MEDIUM,1376.0,1210
+koppal,78.3,MEDIUM,681.0,660
+chikkamagaluru,77.3,MEDIUM,1014.0,896
+haveri,74.5,MEDIUM,740.0,676
+chikkaballapura,74.2,MEDIUM,1004.0,820
+vijayapura,74.1,MEDIUM,807.0,808
+kalaburgi city,73.8,MEDIUM,543.0,372
+bidar,73.6,MEDIUM,733.0,566
+mysuru district,73.5,MEDIUM,1243.0,1192
+mandya,73.3,MEDIUM,1433.0,1220
+kodagu,73.2,MEDIUM,528.0,372
+udupi,72.4,MEDIUM,807.0,462
+ballari,72.4,MEDIUM,557.0,546
+hubballi dharwad city,72.3,MEDIUM,484.0,434
+kalaburgi,72.2,MEDIUM,762.0,668
+kolar,71.8,MEDIUM,725.0,666
+tumakuru,71.0,MEDIUM,1603.0,1424
+hassan,70.2,MEDIUM,1455.0,1300
+uttara kannada,70.0,LOW,889.0,668
+k.g.f.,69.1,LOW,331.0,240
+mangaluru city,68.9,LOW,615.0,474
+bagalkot,68.7,LOW,932.0,636
+mysuru city,67.8,LOW,920.0,750
+gadag,67.5,LOW,407.0,274
+chamarajnagar,67.2,LOW,574.0,540
+k.railways,67.0,LOW,314.0,18
+chitradurga,67.0,LOW,1454.0,1282
+yadgiri,66.3,LOW,510.0,466
+bengaluru district,66.3,LOW,1564.0,1418
+belagavi city,65.5,LOW,508.0,410
+vijayanagara,63.6,LOW,681.0,514

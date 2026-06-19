@@ -1,0 +1,39 @@
+district,actual_2023,pred_rf,pred_lr
+bagalkot,636,748.0,636.0
+ballari,546,555.0,546.0
+belagavi city,410,470.0,410.0
+belagavi district,1342,1411.0,1342.0
+bengaluru city,7848,5317.0,7848.0
+bengaluru district,1418,1433.0,1418.0
+bidar,566,659.0,566.0
+chamarajnagar,540,587.0,540.0
+chikkaballapura,820,874.0,820.0
+chikkamagaluru,896,989.0,896.0
+chitradurga,1282,1361.0,1282.0
+dakshina kannada,378,524.0,378.0
+davanagere,1148,1197.0,1148.0
+dharwad,266,290.0,266.0
+gadag,274,342.0,274.0
+hassan,1300,1368.0,1300.0
+haveri,676,669.0,676.0
+hubballi dharwad city,434,466.0,434.0
+k.g.f.,240,277.0,240.0
+k.railways,18,220.0,18.0
+kalaburgi,668,719.0,668.0
+kalaburgi city,372,464.0,372.0
+kodagu,372,453.0,372.0
+kolar,666,660.0,666.0
+koppal,660,652.0,660.0
+mandya,1220,1352.0,1220.0
+mangaluru city,474,568.0,474.0
+mysuru city,750,904.0,750.0
+mysuru district,1192,1207.0,1192.0
+raichur,1030,1049.0,1030.0
+ramanagara,1210,1318.0,1210.0
+shimoga,1632,1584.0,1632.0
+tumakuru,1424,1469.0,1424.0
+udupi,462,647.0,462.0
+uttara kannada,668,771.0,668.0
+vijayanagara,514,603.0,514.0
+vijayapura,808,898.0,808.0
+yadgiri,466,508.0,466.0

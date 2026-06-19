@@ -163,13 +163,18 @@ train = compute_dcvi(train, sc_vol, sc_wc, sc_tr, sc_var)
 # We predict total_crime, then compute DCVI from the prediction.
 
 FEATURES = [
-    'district', 'year', 'is_odd_year',
-    'crime_against_children', 'crime_against_women',
-    'cyber_crime', 'other_crime', 'violent_crime',
-    'variety', 'wc_ratio',
-    'lag_1_count', 'lag_2_count', 'lag_3_count',
-    'lag_1_women', 'lag_1_children',
-    'yoy_women', 'rolling_mean_3'
+    'district',
+    'year',
+    'is_odd_year',
+    'variety',
+    'wc_ratio',
+    'lag_1_count',
+    'lag_2_count',
+    'lag_3_count',
+    'lag_1_women',
+    'lag_1_children',
+    'yoy_women',
+    'rolling_mean_3'
 ]
 TARGET = 'total_crime'
 
@@ -349,3 +354,44 @@ for i, row in test_cases.iterrows():
     print(f"Expected Crime      : {row['expected_total']}")
     print(f"Predicted Crime     : {row['pred_total']:.0f}")
     print(f"Predicted DCVI      : {row['dcvi_score']}")
+    
+# two other model training
+from sklearn.linear_model import LinearRegression
+
+lr = LinearRegression()
+lr.fit(X_train, y_train)
+
+lr_pred = lr.predict(test_eval[FEATURES])
+
+lr_r2 = r2_score(test_eval[TARGET], lr_pred)
+lr_mae = mean_absolute_error(test_eval[TARGET], lr_pred)
+print("\n   Linear Regression\n")
+print("     R2 Score:",lr_r2)
+print("     MAE :",lr_mae)
+
+#xgboost
+from xgboost import XGBRegressor
+
+xgb = XGBRegressor(
+    n_estimators=500,
+    max_depth=6,
+    learning_rate=0.05,
+    random_state=42
+)
+
+xgb.fit(X_train, y_train)
+
+xgb_pred = xgb.predict(test_eval[FEATURES])
+
+xgb_r2 = r2_score(test_eval[TARGET], xgb_pred)
+xgb_mae = mean_absolute_error(test_eval[TARGET], xgb_pred)
+print("\n   XGBoost\n")
+print("     R2 Score:",xgb_r2)
+print("     MAE :",xgb_mae)
+
+#random forest
+print(f"\n  random forest\n")
+print(f"    MAE : {mae:.0f}")
+print(f"    R2  : {r2:.3f} ")
+print(f"    Accuracy : {accuracy:.2f}%")
+print()
