@@ -417,9 +417,12 @@ elif page == "🗺️  Bengaluru Hotspot Map":
         st.success(f"✅ Loaded: **{html_file}**")
         st.components.v1.html(html_content, height=650, scrolling=False)
     else:
-        st.warning("⚠️ Bengaluru hotspot HTML not found. Run `python kar_map_fixed.py` "
-                   "then refresh.")
-        st.markdown("**The app looks for any of these files:**")
+        st.warning("⚠️ Bengaluru Hotspot Map Not Found")
+        st.markdown(
+            "To generate the detailed hotspot map, please run the `hotspot_map.py` script from the `Map_File` directory:"
+        )
+        st.code("python Map_File/hotspot_map.py", language="bash")
+        st.markdown("The app is looking for `outputs-maps/bengaluru_hotspot_all.html` or one of the following fallback files:")
         for f in possible:
             st.code(f)
         # Placeholder map
@@ -490,23 +493,35 @@ elif page == "📊  All Districts Ranking":
         marker_line_width=0
     )
     fig_all.update_layout(
-        margin=dict(t=20,b=20,l=10,r=80),
-        showlegend=True,
-        legend=dict(orientation='h', y=1.02, x=0,
-                    font=dict(size=18), title=None),
-        plot_bgcolor='rgba(0,0,0,0)', paper_bgcolor='rgba(0,0,0,0)',
-        xaxis=dict(showgrid=True, gridcolor='#f3f4f6',
-                   tickfont=dict(size=16,color='#9ca3af')),
-        yaxis=dict(showgrid=False, tickfont=dict(size=13,color='#374151'))
+    margin=dict(t=80,b=20,l=10,r=80),
+
+    showlegend=True,
+
+    legend=dict(
+        orientation='h',
+        y=1.12,
+        x=0,
+        font=dict(size=18),
+        title=None
+    ))
+    fig_all.add_vline(
+    x=P33,
+    line_dash='dash',
+    line_color='#16a34a',
+    annotation_text=""
     )
-    fig_all.add_vline(x=P33, line_dash='dash', line_color='#16a34a', line_width=1.7,
-                      annotation_text=f"LOW/MEDIUM ({P33:.0f})",
-                      annotation_font_size=10, annotation_font_color='#16a34a',
-                      annotation_position='top right')
-    fig_all.add_vline(x=P66, line_dash='dash', line_color='#dc2626', line_width=1.7,
-                      annotation_text=f"MEDIUM/HIGH ({P66:.0f})",
-                      annotation_font_size=10, annotation_font_color='#dc2626',
-                      annotation_position='top right')
+
+    fig_all.add_vline(
+    x=P66,
+    line_dash='dash',
+    line_color='#dc2626',
+    annotation_text=""
+    )
+    st.caption(
+    f"Risk thresholds: LOW < {P33:.0f}, "
+    f"MEDIUM {P33:.0f}-{P66:.0f}, "
+    f"HIGH > {P66:.0f}"
+)
     st.plotly_chart(fig_all, use_container_width=True, key='all_bar')
 
     st.markdown("<hr style='margin:20px 0'>", unsafe_allow_html=True)
@@ -516,3 +531,4 @@ elif page == "📊  All Districts Ranking":
     s2.metric("Medium risk districts", str((pred_df['risk']=='MEDIUM').sum()))
     s3.metric("Low risk districts",    str((pred_df['risk']=='LOW').sum()))
     s4.metric("Avg DCVI score",        f"{pred_df['dcvi_score'].mean():.1f}")
+    

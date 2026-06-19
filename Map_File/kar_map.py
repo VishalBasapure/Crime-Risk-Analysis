@@ -172,7 +172,7 @@ Click any circle for details</small>
 </div>"""
 m.get_root().html.add_child(folium.Element(legend_html))
 
-m.save("../outputs-maps/karnataka1_crime_2024_fixed.html")   
+m.save("../outputs-maps/karnataka_crime_2024_fixed.html")   
 print(f"\nMap saved: ../outputs-maps/karnataka_crime_2024_fixed.html")
 print(f"Heat points plotted: {len(heat_data)}")
 print("Open in Chrome or Firefox — works offline.")
